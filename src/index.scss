@@ -17,6 +17,8 @@
 // TITLE
 .titleHeader {
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   .titleHeading {
     text-align: center;
@@ -36,6 +38,11 @@
 }
 
 // BIO
+.bio {
+  text-align: center;
+}
+
+// QUESTIONS
 .questionSection {
   // placholder
 }
@@ -45,8 +52,14 @@
 
 .question {
   text-align: center;
+  cursor: pointer;
 }
 
 .answer {
   text-align: center;
+}
+
+//listItems
+.listItemTitle {
+  cursor: pointer;
 }

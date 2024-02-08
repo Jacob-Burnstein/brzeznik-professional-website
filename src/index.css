@@ -11,6 +11,8 @@
 
 .titleHeader {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .titleHeader .titleHeading {
   text-align: center;
@@ -26,16 +28,25 @@
   width: 300px;
 }
 
+.bio {
+  text-align: center;
+}
+
 .hidden {
   display: none;
 }
 
 .question {
   text-align: center;
+  cursor: pointer;
 }
 
 .answer {
   text-align: center;
+}
+
+.listItemTitle {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
