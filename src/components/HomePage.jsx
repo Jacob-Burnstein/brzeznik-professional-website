@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./subcomponents/Title";
 import Bio from "./subcomponents/Bio";
+import Questions from "./subcomponents/Questions";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <main>
         <Title />
         <Bio />
+        <Questions />
       </main>
     </>
   );

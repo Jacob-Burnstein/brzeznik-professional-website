@@ -26,4 +26,16 @@
   width: 300px;
 }
 
+.hidden {
+  display: none;
+}
+
+.question {
+  text-align: center;
+}
+
+.answer {
+  text-align: center;
+}
+
 /*# sourceMappingURL=index.css.map */
