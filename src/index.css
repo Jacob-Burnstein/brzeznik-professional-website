@@ -9,4 +9,21 @@
   padding: 1em;
 }
 
+.titleHeader {
+  display: flex;
+}
+.titleHeader .titleHeading {
+  text-align: center;
+}
+.titleHeader .titleText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.titleHeader img {
+  aspect-ratio: fixed;
+  padding: 1em;
+  width: 300px;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -15,3 +15,22 @@
 }
 
 // TITLE
+.titleHeader {
+  display: flex;
+
+  .titleHeading {
+    text-align: center;
+  }
+
+  .titleText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    aspect-ratio: fixed;
+    padding: 1em;
+    width: 300px;
+  }
+}
