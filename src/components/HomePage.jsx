@@ -3,6 +3,7 @@ import Title from "./subcomponents/Title";
 import Bio from "./subcomponents/Bio";
 import Questions from "./subcomponents/Questions";
 import List from "./subcomponents/List";
+import ServicesOffered from "./subcomponents/ServicesOffered";
 
 const HomePage = () => {
   return (
@@ -11,7 +12,10 @@ const HomePage = () => {
         <Title />
         <Bio />
         <Questions />
-        <List />
+        <section className="questionsAndServicesSection">
+          <List />
+          <ServicesOffered />
+        </section>
       </main>
     </>
   );

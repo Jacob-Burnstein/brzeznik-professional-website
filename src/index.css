@@ -32,6 +32,10 @@
   text-align: center;
 }
 
+.questionsAndServicesSection {
+  display: flex;
+}
+
 .hidden {
   display: none;
 }
@@ -47,6 +51,18 @@
 
 .listItemTitle {
   cursor: pointer;
+}
+
+.servicesList {
+  display: flex;
+  flex-direction: column;
+}
+.servicesList ul {
+  padding-left: 0;
+}
+.servicesList .serviceAndCheck {
+  display: flex;
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=index.css.map */
