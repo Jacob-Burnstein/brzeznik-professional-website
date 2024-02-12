@@ -4,10 +4,13 @@ import Square from "./Square";
 const Bio = () => {
   return (
     <section className="bio">
-      <p>
-        Brianna Rzeznik (she/her) is a Masters-level music therapist and
-        psychotherapist currently practicing in Austin, Texas.
-      </p>
+      <div className="squareBio">
+        {/* <Square /> */}
+        <p>
+          Brianna Rzeznik (she/her) is a Masters-level music therapist and
+          psychotherapist currently practicing in Austin, Texas.
+        </p>
+      </div>
       <p>
         Brianna holds her Masters in Clinical Mental Health Counseling with a
         music therapy specialization from Lesley University. She has worked as a

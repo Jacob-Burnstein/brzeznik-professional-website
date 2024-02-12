@@ -51,13 +51,17 @@ body {
   width: 300px;
 }
 
+.squareBio {
+  display: flex;
+}
+
 .square {
-  position: absolute;
-  opacity: 0.3;
-  top: 40%;
-  left: 27%;
+  align-self: center;
+  opacity: 0.7;
   aspect-ratio: 1/1;
-  width: 12em;
+  width: 3em;
+  height: 3em;
+  margin-right: 1em;
   background-color: #7d6e83;
   z-index: -1;
 }
@@ -65,13 +69,28 @@ body {
 .bio {
   z-index: 1;
   text-align: justify;
-  width: 850px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1em;
+  line-height: 200%;
+  border-bottom: solid #dfd3c3 1px;
 }
 
 .questionsAndServicesSection {
+  max-width: 1100px;
   display: flex;
+  border-bottom: solid #dfd3c3 1px;
+}
+
+.questionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: #d0b8a8;
+  margin: 0 auto;
+  line-height: 200%;
+  border-bottom: solid #dfd3c3 1px;
 }
 
 .hidden {
@@ -81,10 +100,21 @@ body {
 .question {
   text-align: center;
   cursor: pointer;
+  font-size: 2em;
+  color: #f8ede3;
+  text-shadow: 1px 1px 4px black;
+  margin: 1em;
 }
 
 .answer {
   text-align: center;
+  font-size: larger;
+  background-color: #dfd3c3;
+  padding: 1em;
+  max-width: 900px;
+  margin-bottom: 4em;
+  box-shadow: 1px 3px 8px #333333;
+  border-radius: 10px;
 }
 
 .listItemTitle {
