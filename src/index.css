@@ -10,6 +10,7 @@ body {
 
 .navbar {
   background-color: #7d6e83;
+  color: #f8ede3;
 }
 .navbar .navLinks {
   display: flex;
@@ -25,6 +26,7 @@ body {
 .titleHeader {
   display: flex;
   justify-content: center;
+  position: relative;
   padding: 1em;
 }
 .titleHeader .titleHeading {
@@ -51,8 +53,9 @@ body {
 
 .square {
   position: absolute;
-  top: 20em;
-  left: 12em;
+  opacity: 0.3;
+  top: 40%;
+  left: 27%;
   aspect-ratio: 1/1;
   width: 12em;
   background-color: #7d6e83;

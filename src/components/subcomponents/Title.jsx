@@ -11,6 +11,7 @@ const Title = () => {
         </h1>
         <h3 className="nameHeading">Brianna Rzeznik, MA, MTBC</h3>
       </div>
+      <Square />
       <img src="src/images/placeholder.jpeg" alt="brianna in the closet" />
     </header>
   );
