@@ -1,6 +1,19 @@
+html {
+  font-family: "Lora", serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #f8ede3;
+  // background-color: #d0b8a8;
+  // background-color: #7d6e83;
+  color: black;
+}
+
 // NAVBAR
 
 .navbar {
+  background-color: #7d6e83;
   .navLinks {
     display: flex;
     justify-content: flex-end;
@@ -17,29 +30,52 @@
 // TITLE
 .titleHeader {
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 1em;
 
   .titleHeading {
-    text-align: center;
+    text-align: left;
+    font-size: 3em;
+    height: 100%;
+    margin: 0;
+    display: flex;
   }
 
   .titleText {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    width: 300px;
+    justify-content: space-between;
+  }
+
+  .nameHeading {
+    margin-bottom: 0;
   }
 
   img {
     aspect-ratio: fixed;
-    padding: 1em;
     width: 300px;
   }
 }
 
 // BIO
+.square {
+  position: absolute;
+  top: 20em;
+  left: 12em;
+  aspect-ratio: 1/1;
+  width: 12em;
+  background-color: #7d6e83;
+  z-index: -1;
+}
+
 .bio {
-  text-align: center;
+  z-index: 1;
+  text-align: justify;
+  width: 850px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .questionsAndServicesSection {

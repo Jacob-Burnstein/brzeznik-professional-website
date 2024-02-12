@@ -1,3 +1,16 @@
+html {
+  font-family: "Lora", serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #f8ede3;
+  color: black;
+}
+
+.navbar {
+  background-color: #7d6e83;
+}
 .navbar .navLinks {
   display: flex;
   justify-content: flex-end;
@@ -11,25 +24,47 @@
 
 .titleHeader {
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 1em;
 }
 .titleHeader .titleHeading {
-  text-align: center;
+  text-align: left;
+  font-size: 3em;
+  height: 100%;
+  margin: 0;
+  display: flex;
 }
 .titleHeader .titleText {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
+  width: 300px;
+  justify-content: space-between;
+}
+.titleHeader .nameHeading {
+  margin-bottom: 0;
 }
 .titleHeader img {
   aspect-ratio: fixed;
-  padding: 1em;
   width: 300px;
 }
 
+.square {
+  position: absolute;
+  top: 20em;
+  left: 12em;
+  aspect-ratio: 1/1;
+  width: 12em;
+  background-color: #7d6e83;
+  z-index: -1;
+}
+
 .bio {
-  text-align: center;
+  z-index: 1;
+  text-align: justify;
+  width: 850px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .questionsAndServicesSection {
