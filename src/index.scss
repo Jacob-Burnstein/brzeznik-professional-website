@@ -13,6 +13,7 @@ body {
 .navbar {
   background-color: #7d6e83;
   color: #f8ede3;
+  border-bottom: solid 1px;
   .navLinks {
     display: flex;
     justify-content: flex-end;
@@ -86,6 +87,7 @@ body {
 }
 
 .questionsAndServicesSection {
+  padding-top: 1em;
   background-color: #dfd3c3;
   width: 100%;
   margin: 0 auto;
@@ -117,7 +119,8 @@ body {
   background-color: #d0b8a8;
   margin: 0 auto;
   line-height: 200%;
-  border-bottom: solid #dfd3c3 1px;
+  border-bottom: solid 1px;
+  border-top: solid 1px;
 }
 .hidden {
   display: none;
@@ -146,6 +149,9 @@ body {
 //LIST ITEMS
 .listItemTitle {
   cursor: pointer;
+  color: #7d6e83;
+  padding-bottom: 0.5em;
+  border-bottom: solid black 1px;
 }
 
 // SERVICES
