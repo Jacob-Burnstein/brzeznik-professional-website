@@ -22,8 +22,8 @@ const List = () => {
   ];
 
   return (
-    <div>
-      <h4>How can music therapy help with different challenges?</h4>
+    <div className="listSection">
+      <h2>How can music therapy help with different challenges?</h2>
       {namesAndDescriptions.map(({ name, description }, index) => (
         <ListCard key={index} name={name} description={description} />
       ))}

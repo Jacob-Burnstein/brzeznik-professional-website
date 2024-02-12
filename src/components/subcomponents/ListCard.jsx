@@ -5,12 +5,12 @@ const ListCard = ({ name, description }) => {
 
   return (
     <section>
-      <h5
+      <h3
         className="listItemTitle"
         onClick={() => (!isClicked ? setIsClicked(true) : setIsClicked(false))}
       >
         {name}
-      </h5>
+      </h3>
       <p className={!isClicked ? "hidden" : "description"}>{description}</p>
     </section>
   );

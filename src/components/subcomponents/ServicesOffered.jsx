@@ -12,12 +12,12 @@ const ServicesOffered = () => {
   return (
     <>
       <section className="servicesList">
-        <h4>Services Offered</h4>
+        <h2>Services Offered</h2>
         <ul>
           {services.map((service, index) => (
             <div className="serviceAndCheck" key={index}>
+              <i class="fa-solid fa-check fa-2x checkmark"></i>
               <li className="service">{service}</li>
-              <i class="fa-solid fa-check checkmark"></i>
             </div>
           ))}
         </ul>
