@@ -103,13 +103,6 @@ body {
   padding-bottom: 2em;
   padding-top: 1em;
 }
-.descriptionHidden {
-  display: none;
-}
-
-.titleHidden {
-  display: none;
-}
 
 .question {
   text-align: center;
@@ -153,7 +146,30 @@ body {
 }
 
 .description {
-  text-align: center;
+  background-color: #f8ede3;
+  border-radius: 10px;
+  box-shadow: 1px 3px 8px #333333;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 25em;
+  border: solid 1px;
+  cursor: pointer;
+}
+
+.descriptionName {
+  color: #7d6e83;
+}
+
+.descriptionHidden {
+  display: none;
+}
+
+.titleHidden {
+  display: none;
 }
 
 //LIST ITEMS
