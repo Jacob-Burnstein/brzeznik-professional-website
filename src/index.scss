@@ -5,7 +5,7 @@ html {
 body {
   margin: 0 auto;
   background-color: #f8ede3;
-  color: black;
+  color: #333333;
 }
 
 // NAVBAR
@@ -33,6 +33,7 @@ body {
   justify-content: center;
   position: relative;
   padding: 1em;
+  margin-top: 1em;
 
   .titleHeading {
     text-align: left;
@@ -61,8 +62,10 @@ body {
 }
 
 // BIO
-.squareBio {
-  display: flex;
+.intro {
+  // text-align: center;
+  font-style: italic;
+  font-size: large;
 }
 
 .square {
@@ -86,6 +89,40 @@ body {
   border-bottom: solid #dfd3c3 1px;
 }
 
+// QUESTIONS
+.questionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: #d0b8a8;
+  margin: 0 auto;
+  line-height: 200%;
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  padding-bottom: 1em;
+}
+.hidden {
+  display: none;
+}
+
+.question {
+  text-align: center;
+  // cursor: pointer;
+  font-size: 2em;
+}
+
+.answer {
+  text-align: center;
+  font-size: larger;
+  background-color: #dfd3c3;
+  padding: 1em;
+  max-width: 900px;
+  // margin-bottom: 4em;
+  box-shadow: 1px 3px 8px #333333;
+  border-radius: 10px;
+}
+
 .questionsAndServicesSection {
   padding-top: 1em;
   background-color: #dfd3c3;
@@ -100,50 +137,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: solid;
+  padding-right: 1em;
+  padding-left: 1em;
 
   h2 {
     text-align: center;
+    border: solid;
+    margin: 0;
   }
 }
 
 .description {
   text-align: center;
-}
-
-// QUESTIONS
-.questionSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  background-color: #d0b8a8;
-  margin: 0 auto;
-  line-height: 200%;
-  border-bottom: solid 1px;
-  border-top: solid 1px;
-}
-.hidden {
-  display: none;
-}
-
-.question {
-  text-align: center;
-  cursor: pointer;
-  font-size: 2em;
-  color: #f8ede3;
-  text-shadow: 1px 1px 4px black;
-  margin: 1em;
-}
-
-.answer {
-  text-align: center;
-  font-size: larger;
-  background-color: #dfd3c3;
-  padding: 1em;
-  max-width: 900px;
-  margin-bottom: 4em;
-  box-shadow: 1px 3px 8px #333333;
-  border-radius: 10px;
 }
 
 //LIST ITEMS
@@ -152,6 +158,7 @@ body {
   color: #7d6e83;
   padding-bottom: 0.5em;
   border-bottom: solid black 1px;
+  text-align: center;
 }
 
 // SERVICES
@@ -160,6 +167,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: solid;
+
+  h2 {
+    text-align: center;
+    border: solid;
+    margin: 0;
+  }
 
   ul {
     padding-left: 0;

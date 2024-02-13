@@ -4,19 +4,17 @@ import Square from "./Square";
 const Bio = () => {
   return (
     <section className="bio">
-      <div className="squareBio">
-        {/* <Square /> */}
-        <p>
-          Brianna Rzeznik (she/her) is a Masters-level music therapist and
-          psychotherapist currently practicing in Austin, Texas.
-        </p>
-      </div>
+      <p className="intro">
+        Brianna Rzeznik (she/her) is a Masters-level music therapist and
+        psychotherapist currently practicing in Austin, Texas.
+      </p>
+
       <p>
         Brianna holds her Masters in Clinical Mental Health Counseling with a
         music therapy specialization from Lesley University. She has worked as a
         music therapist in hospitals, schools, and homes; her clients include
         adults and children with Autism and other intellectual and developmental
-        disabilities, older adults (including those with Alzheimer’s and
+        disabilities, older adults (including those with Alzheimer's and
         Dementia), individuals with acute psychiatric symptoms, individuals
         dealing with or recovering from medical diagnoses or procedures, and
         children experiencing such things as homelessness, parental
