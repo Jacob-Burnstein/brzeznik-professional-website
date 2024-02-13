@@ -16,7 +16,7 @@ const ServicesOffered = () => {
         <ul>
           {services.map((service, index) => (
             <div className="serviceAndCheck" key={index}>
-              <i class="fa-solid fa-check fa-2x checkmark"></i>
+              <i className="fa-solid fa-check fa-2x checkmark"></i>
               <li className="service">{service}</li>
             </div>
           ))}

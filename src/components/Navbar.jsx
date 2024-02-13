@@ -1,17 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../index.css";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <nav className="navbar">
       <ul className="navLinks">
-        <li>Home</li>
+        <li onClick={() => navigate("/home")}>Home</li>
         <p>|</p>
-        <li>Psychotherapy</li>
+        <li onClick={() => navigate("/psychotherapy")}>Psychotherapy</li>
         <p>|</p>
-        <li>Lessons & Performance</li>
+        <li onClick={() => navigate("/music")}>Lessons & Performance</li>
         <p>|</p>
-        <li>Contact</li>
+        <li onClick={() => navigate("/contact")}>Contact</li>
       </ul>
     </nav>
   );

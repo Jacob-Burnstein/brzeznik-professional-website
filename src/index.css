@@ -21,6 +21,7 @@ body {
   padding: 0;
 }
 .navbar .navLinks li {
+  cursor: pointer;
   padding: 1em;
 }
 
