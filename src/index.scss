@@ -100,7 +100,8 @@ body {
   line-height: 200%;
   border-bottom: solid 1px;
   border-top: solid 1px;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
+  padding-top: 1em;
 }
 .hidden {
   display: none;
@@ -117,14 +118,14 @@ body {
   font-size: larger;
   background-color: #dfd3c3;
   padding: 1em;
-  max-width: 900px;
+  max-width: 1100px;
   // margin-bottom: 4em;
   box-shadow: 1px 3px 8px #333333;
   border-radius: 10px;
 }
 
 .questionsAndServicesSection {
-  padding-top: 1em;
+  padding-top: 2em;
   background-color: #dfd3c3;
   width: 100%;
   margin: 0 auto;
@@ -137,13 +138,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid;
+  justify-content: space-between;
   padding-right: 1em;
   padding-left: 1em;
 
   h2 {
     text-align: center;
-    border: solid;
     margin: 0;
   }
 }
@@ -156,8 +156,6 @@ body {
 .listItemTitle {
   cursor: pointer;
   color: #7d6e83;
-  padding-bottom: 0.5em;
-  border-bottom: solid black 1px;
   text-align: center;
 }
 
@@ -167,35 +165,35 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid;
+  height: 100%;
 
   h2 {
     text-align: center;
-    border: solid;
     margin: 0;
   }
 
   ul {
+    padding-top: 1em;
     padding-left: 0;
   }
 
   .serviceAndCheck {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
-    padding-bottom: 2em;
 
     .service {
-      padding-right: 6em;
+      padding-right: 2em;
       font-size: large;
       font-weight: bold;
-      border-bottom: solid black 1px;
+      padding-bottom: 1em;
+      border-bottom: solid#333333 1px;
       width: 6em;
       color: #7d6e83;
+      margin-bottom: 15%;
     }
     .checkmark {
       padding-right: 1em;
-      // color: #7d6e83;
+      color: #333333;
     }
   }
 }
