@@ -1,4 +1,7 @@
 import React from "react";
+import placeholder from "../../images/placeholder.jpeg";
+
+const image = placeholder;
 
 const Title = () => {
   return (
@@ -9,7 +12,7 @@ const Title = () => {
         </h1>
         <h3 className="nameHeading">Brianna Rzeznik, MA, MTBC</h3>
       </div>
-      <img src="src/images/placeholder.jpeg" alt="brianna in the closet" />
+      <img src={image} alt="brianna in the closet" />
     </header>
   );
 };
