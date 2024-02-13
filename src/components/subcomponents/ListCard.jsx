@@ -1,17 +1,37 @@
 import React, { useState } from "react";
 
 const ListCard = ({ name, description }) => {
-  const [isClicked, setIsClicked] = useState(false);
+  const [isTitleClicked, setIsTitleClicked] = useState(false);
+  const [isDescriptionClicked, setIsDescriptionClicked] = useState(false);
+
+  const setTitleClick = () => {
+    !isTitleClicked ? setIsTitleClicked(true) : setIsTitleClicked(false);
+  };
+  const setDescriptionClick = () => {
+    !isDescriptionClicked
+      ? setIsDescriptionClicked(true)
+      : setIsDescriptionClicked(false);
+  };
+
+  const handleClick = () => {
+    setTitleClick();
+    setDescriptionClick();
+  };
 
   return (
     <section>
       <h3
-        className="listItemTitle"
-        onClick={() => (!isClicked ? setIsClicked(true) : setIsClicked(false))}
+        className={isDescriptionClicked ? "titleHidden" : "listItemTitle"}
+        onClick={() => handleClick()}
       >
         {name}
       </h3>
-      <p className={!isClicked ? "hidden" : "description"}>{description}</p>
+      <p
+        className={!isTitleClicked ? "descriptionHidden" : "description"}
+        onClick={() => handleClick()}
+      >
+        {description}
+      </p>
     </section>
   );
 };

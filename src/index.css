@@ -93,7 +93,11 @@ body {
   padding-top: 1em;
 }
 
-.hidden {
+.descriptionHidden {
+  display: none;
+}
+
+.titleHidden {
   display: none;
 }
 
