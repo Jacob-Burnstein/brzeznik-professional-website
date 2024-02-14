@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: #f8ede3;
+  background-color: #faf9f6;
   color: #333333;
 }
 
@@ -96,7 +96,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  background-color: #d0b8a8;
+  background-color: #7d6e83;
   margin: 0 auto;
   line-height: 200%;
   border-bottom: solid 1px;
@@ -117,18 +117,18 @@ body {
   background-color: #dfd3c3;
   padding: 1em;
   max-width: 1100px;
-  // margin-bottom: 4em;
   box-shadow: 1px 3px 8px #333333;
-  // border-radius: 10px;
+  border-radius: 5px;
 }
 
 .questionsAndServicesSection {
   padding-top: 2em;
-  background-color: #f8ede3;
+  background-color: #faf9f6;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .listSection {
@@ -139,6 +139,7 @@ body {
   justify-content: space-between;
   padding-right: 1em;
   padding-left: 1em;
+  padding-bottom: 2em;
 
   h2 {
     text-align: center;
@@ -147,7 +148,7 @@ body {
 }
 
 .description {
-  background-color: whitesmoke;
+  background-color: #faf9f6;
   // border-radius: 5px;
   box-shadow: 1px 3px 8px #333333;
   margin-top: 1em;
