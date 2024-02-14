@@ -215,3 +215,29 @@ body {
     }
   }
 }
+
+// CONTACT
+.contactPage {
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      width: 30em;
+    }
+
+    .messageInput {
+      height: 10em;
+    }
+
+    button {
+      width: fit-content;
+    }
+  }
+}

@@ -2,9 +2,17 @@ import React from "react";
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="contactPage">
       <h1>Contact</h1>
-      <p>Under construction</p>
+      <form>
+        <label>Name: </label>
+        <input type="text" />
+        <label>Email: </label>
+        <input type="text" />
+        <label>Message: </label>
+        <input className="messageInput" type="text" />
+        <button type="submit">Submit</button>
+      </form>
     </div>
   );
 };

@@ -197,4 +197,23 @@ body {
   color: #d0b8a8;
 }
 
+.contactPage h1 {
+  text-align: center;
+}
+.contactPage form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactPage form input {
+  width: 30em;
+}
+.contactPage form .messageInput {
+  height: 10em;
+}
+.contactPage form button {
+  width: fit-content;
+}
+
 /*# sourceMappingURL=index.css.map */
