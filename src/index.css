@@ -10,7 +10,7 @@ body {
 
 .navbar {
   background-color: #7d6e83;
-  color: #f8ede3;
+  color: #faf9f6;
   border-bottom: solid 1px;
 }
 .navbar .navLinks {
@@ -96,13 +96,14 @@ body {
 
 .question {
   text-align: center;
+  color: #faf9f6;
   font-size: 2em;
 }
 
 .answer {
   text-align: center;
   font-size: larger;
-  background-color: #dfd3c3;
+  background-color: #faf9f6;
   padding: 1em;
   max-width: 1100px;
   box-shadow: 1px 3px 8px #333333;
@@ -110,7 +111,7 @@ body {
 }
 
 .questionsAndServicesSection {
-  padding-top: 2em;
+  padding-top: 4em;
   background-color: #faf9f6;
   width: 100%;
   margin: 0 auto;
@@ -120,27 +121,29 @@ body {
 }
 
 .listSection {
-  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding-right: 1em;
-  padding-left: 1em;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
+  border-bottom: solid 1px;
 }
 .listSection h2 {
   text-align: center;
   margin: 0;
 }
+.listSection .listItemTitle {
+  cursor: pointer;
+  padding-top: 1em;
+  color: #7d6e83;
+  text-align: center;
+}
 
 .description {
   background-color: #faf9f6;
+  border-radius: 5px;
   box-shadow: 1px 3px 8px #333333;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 2em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
   padding-left: 1em;
   padding-right: 1em;
   width: 25em;
@@ -160,14 +163,8 @@ body {
   display: none;
 }
 
-.listItemTitle {
-  cursor: pointer;
-  color: #7d6e83;
-  text-align: center;
-}
-
 .servicesList {
-  width: 30%;
+  margin-top: 4em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,7 +188,7 @@ body {
   font-weight: bold;
   padding-bottom: 1em;
   border-bottom: solid #333333 1px;
-  width: 6em;
+  width: 12em;
   color: #7d6e83;
   margin-bottom: 15%;
 }
