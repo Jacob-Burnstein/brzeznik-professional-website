@@ -5,6 +5,7 @@ const ContactPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [userMessage, setUserMessage] = useState("");
 
   const serviceId = "service_fgob5cf";
   const templateId = "template_s8bncad";
@@ -16,20 +17,39 @@ const ContactPage = () => {
     message: message,
   };
 
+  const validateEmail = (email) => {
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
+
+  const validateForm = (name, email, message) => {
+    console.log("validating");
+    if (name.length < 1 || email.length < 1 || message.length < 1) {
+      setUserMessage("Please fill out all fields");
+      return false;
+    }
+    if (!validateEmail) {
+      setMessage("Invalid email address");
+      return false;
+    } else return true;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs
-      .send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("email sent!", response);
-        setName("");
-        setEmail("");
-        setMessage("");
-      })
-      .catch((error) => {
-        console.error("Something went wrong", error);
-      });
+    if (validateForm(name, email, message)) {
+      emailjs
+        .send(serviceId, templateId, templateParams, publicKey)
+        .then(() => {
+          setUserMessage("Thanks for reaching out!");
+          setName("");
+          setEmail("");
+          setMessage("");
+        })
+        .catch(() => {
+          setUserMessage("Something went wrong");
+        });
+    }
   };
 
   return (
@@ -39,12 +59,14 @@ const ContactPage = () => {
         <label>Name: </label>
         <input
           type="text"
+          placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <label>Email: </label>
         <input
-          type="text"
+          type="email"
+          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -52,10 +74,12 @@ const ContactPage = () => {
         <input
           className="messageInput"
           type="text"
+          placeholder="Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
         <button type="submit">Submit</button>
+        <p>{userMessage}</p>
       </form>
     </div>
   );
