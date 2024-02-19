@@ -4,7 +4,6 @@ html {
 
 body {
   margin: 0 auto;
-
   background-color: #ffffff;
   color: #333333;
 }
@@ -192,11 +191,9 @@ body {
   font-size: large;
   color: #333333;
 }
-
 .servicesList .serviceAndIcon i {
   color: #7d6e83;
 }
-
 
 .contactPage {
   display: flex;
