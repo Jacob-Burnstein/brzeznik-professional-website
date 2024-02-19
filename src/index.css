@@ -4,13 +4,13 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: #faf9f6;
+  background-color: #ffffff;
   color: #333333;
 }
 
 .navbar {
   background-color: #7d6e83;
-  color: #faf9f6;
+  color: #ffffff;
   border-bottom: solid 1px;
 }
 .navbar .navLinks {
@@ -88,31 +88,28 @@ body {
   background-color: #7d6e83;
   margin: 0 auto;
   line-height: 200%;
-  border-bottom: solid 1px;
-  border-top: solid 1px;
   padding-bottom: 2em;
   padding-top: 1em;
 }
 
 .question {
   text-align: center;
-  color: #faf9f6;
+  color: #ffffff;
   font-size: 2em;
 }
 
 .answer {
   text-align: center;
   font-size: larger;
-  background-color: #faf9f6;
+  background-color: #ffffff;
   padding: 1em;
   max-width: 1100px;
-  box-shadow: 0px 3px 8px lightgray;
+  border: none;
   border-radius: 5px;
 }
 
 .questionsAndServicesSection {
   padding-top: 4em;
-  background-color: #faf9f6;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -139,7 +136,6 @@ body {
 }
 
 .description {
-  background-color: #faf9f6;
   border-radius: 5px;
   box-shadow: 0px 3px 8px lightgray;
   margin-top: 2em;
@@ -192,10 +188,6 @@ body {
   color: #7d6e83;
   margin-bottom: 15%;
 }
-.servicesList .serviceAndCheck .checkmark {
-  padding-right: 1em;
-  color: #d0b8a8;
-}
 
 .contactPage {
   display: flex;
@@ -211,6 +203,7 @@ body {
   padding: 1em;
 }
 .contactPage form input {
+  font-family: inherit;
   margin-top: 0.5em;
   margin-bottom: 1.5em;
   padding-left: 7px;
@@ -218,12 +211,36 @@ body {
   border: none;
   border-radius: 5px;
   width: 30em;
+  box-shadow: 0px 3px 8px lightgray;
 }
-.contactPage form .messageInput {
+.contactPage form textarea {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  padding-top: 0.5em;
+  padding-left: 7px;
+  height: 2em;
+  border: none;
+  border-radius: 5px;
+  width: 30em;
+  box-shadow: 0px 3px 8px lightgray;
+  font-family: inherit;
   height: 10em;
+  resize: vertical;
 }
 .contactPage form button {
-  width: fit-content;
+  transition: all 0.3s ease;
+  width: 5em;
+  background-color: #faf9f6;
+  font-size: larger;
+  border: none;
+  box-shadow: 0px 3px 8px darkgray;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-family: inherit;
+}
+.contactPage form button:hover {
+  background-color: #7d6e83;
+  color: #faf9f6;
 }
 
 /*# sourceMappingURL=index.css.map */
