@@ -197,15 +197,19 @@ body {
   color: #d0b8a8;
 }
 
-.contactPage h1 {
-  text-align: center;
-}
-.contactPage form {
+.contactPage {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.contactPage form {
+  display: flex;
+  flex-direction: column;
+  background-color: #faf9f6;
+}
 .contactPage form input {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
   width: 30em;
 }
 .contactPage form .messageInput {
