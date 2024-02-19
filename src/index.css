@@ -169,14 +169,18 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  min-width: 100vw;
+  width: 100vw;
   background-color: #f5f5f5;
 }
 .servicesList h2 {
   align-items: center;
 }
 .servicesList ul {
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 5em;
   padding-top: 1em;
+  padding-bottom: 1em;
   display: flex;
   width: 80%;
   justify-content: space-around;
@@ -184,6 +188,7 @@ body {
 .servicesList .serviceAndIcon {
   display: flex;
   flex-direction: column;
+  align-items: center;
   list-style-type: none;
 }
 .servicesList .serviceAndIcon .service {
