@@ -31,10 +31,11 @@ body {
 // TITLE
 .titleHeader {
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  max-width: 1100px;
   position: relative;
   padding: 1em;
-  margin-top: 1em;
+  margin-top: 3em;
 
   .titleHeading {
     text-align: left;
@@ -58,7 +59,13 @@ body {
 
   img {
     aspect-ratio: fixed;
-    width: 300px;
+    width: 260px;
+  }
+
+  .header-images {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -87,7 +94,7 @@ body {
   margin: 0 auto;
   padding: 1em;
   line-height: 200%;
-  border-bottom: solid #dfd3c3 1px;
+  margin-bottom: 3em;
 }
 
 // QUESTIONS
@@ -212,6 +219,32 @@ body {
     .checkmark {
       padding-right: 1em;
       color: #d0b8a8;
+    }
+  }
+}
+
+// CONTACT
+.contactPage {
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+
+    input {
+      width: 30em;
+    }
+
+    .messageInput {
+      height: 10em;
+    }
+
+    button {
+      width: fit-content;
     }
   }
 }
