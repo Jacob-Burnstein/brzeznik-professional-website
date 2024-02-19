@@ -58,26 +58,23 @@ const ContactPage = () => {
         <label>Name: </label>
         <input
           type="text"
-          placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <label>Email: </label>
         <input
           type="email"
-          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <label>Message: </label>
-        <input
+        <textarea
           className="messageInput"
           type="text"
-          placeholder="Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <button type="submit">Submit</button>
+        <button type="submit">Send</button>
         <p>{userMessage}</p>
       </form>
     </div>
