@@ -106,7 +106,7 @@ body {
   background-color: #faf9f6;
   padding: 1em;
   max-width: 1100px;
-  box-shadow: 1px 3px 8px #333333;
+  box-shadow: 0px 3px 8px lightgray;
   border-radius: 5px;
 }
 
@@ -141,7 +141,7 @@ body {
 .description {
   background-color: #faf9f6;
   border-radius: 5px;
-  box-shadow: 1px 3px 8px #333333;
+  box-shadow: 0px 3px 8px lightgray;
   margin-top: 2em;
   margin-bottom: 2em;
   padding-left: 1em;
@@ -205,11 +205,18 @@ body {
 .contactPage form {
   display: flex;
   flex-direction: column;
-  background-color: #faf9f6;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0px 3px 8px lightgray;
+  padding: 1em;
 }
 .contactPage form input {
   margin-top: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+  padding-left: 7px;
+  height: 2em;
+  border: none;
+  border-radius: 5px;
   width: 30em;
 }
 .contactPage form .messageInput {
