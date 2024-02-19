@@ -24,7 +24,6 @@ const ContactPage = () => {
   };
 
   const validateForm = (name, email, message) => {
-    console.log("validating");
     if (name.length < 1 || email.length < 1 || message.length < 1) {
       setUserMessage("Please fill out all fields");
       return false;
