@@ -2,9 +2,14 @@ import React from "react";
 
 const ServicesOffered = () => {
   const services = [
-    { name: "Initial Assessment", icon: "fa-solid fa-clipboard-list" },
-    { name: "Individual Tx", icon: "fa-solid fa-person-half-dress" },
-    { name: "Group Tx", icon: "fa-solid fa-people-group" },
+    { name: "Initial Assessment", icon: "fa-solid fa-clipboard-list fa-5x" },
+    {
+      name: "Individual Treatment",
+      icon: "fa-solid fa-person-half-dress fa-5x",
+    },
+    { name: "Group Treatment", icon: "fa-solid fa-people-group fa-5x" },
+    { name: "Cough on ppl", icon: "fa-solid fa-head-side-cough fa-5x" },
+    { name: "Guns welcome", icon: "fa-solid fa-person-rifle fa-5x" },
   ];
   return (
     <>

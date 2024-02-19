@@ -5,6 +5,7 @@ html {
 body {
   margin: 0 auto;
   background-color: #faf9f6;
+  width: 100vw;
   color: #333333;
 }
 
@@ -125,7 +126,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding-bottom: 4em;
-  border-bottom: solid 1px;
 }
 .listSection h2 {
   text-align: center;
@@ -164,20 +164,21 @@ body {
 }
 
 .servicesList {
-  margin-top: 4em;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
+  min-width: 100vw;
+  background-color: #f5f5f5;
 }
 .servicesList h2 {
-  text-align: center;
-  margin: 0;
+  align-items: center;
 }
 .servicesList ul {
   padding-top: 1em;
-  padding-left: 0;
   display: flex;
+  width: 80%;
+  justify-content: space-around;
 }
 .servicesList .serviceAndIcon {
   display: flex;
@@ -185,16 +186,12 @@ body {
   list-style-type: none;
 }
 .servicesList .serviceAndIcon .service {
-  padding-right: 2em;
+  padding-top: 1em;
   font-size: large;
-  font-weight: bold;
-  padding-bottom: 1em;
-  color: #7d6e83;
-  margin-bottom: 15%;
+  color: #333333;
 }
-.servicesList .serviceAndIcon .checkmark {
-  padding-right: 1em;
-  color: #d0b8a8;
+.servicesList .serviceAndIcon i {
+  color: #7d6e83;
 }
 
 .contactPage h1 {
