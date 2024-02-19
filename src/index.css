@@ -177,22 +177,22 @@ body {
 .servicesList ul {
   padding-top: 1em;
   padding-left: 0;
-}
-.servicesList .serviceAndCheck {
   display: flex;
+}
+.servicesList .serviceAndIcon {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
 }
-.servicesList .serviceAndCheck .service {
+.servicesList .serviceAndIcon .service {
   padding-right: 2em;
   font-size: large;
   font-weight: bold;
   padding-bottom: 1em;
-  border-bottom: solid #333333 1px;
-  width: 12em;
   color: #7d6e83;
   margin-bottom: 15%;
 }
-.servicesList .serviceAndCheck .checkmark {
+.servicesList .serviceAndIcon .checkmark {
   padding-right: 1em;
   color: #d0b8a8;
 }

@@ -193,10 +193,12 @@ body {
   ul {
     padding-top: 1em;
     padding-left: 0;
+    display: flex;
   }
 
-  .serviceAndCheck {
+  .serviceAndIcon {
     display: flex;
+    flex-direction: column;
     list-style-type: none;
 
     .service {
@@ -204,8 +206,6 @@ body {
       font-size: large;
       font-weight: bold;
       padding-bottom: 1em;
-      border-bottom: solid#333333 1px;
-      width: 12em;
       color: #7d6e83;
       margin-bottom: 15%;
     }
