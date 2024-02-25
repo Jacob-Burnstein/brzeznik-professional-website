@@ -7,36 +7,31 @@ const ListCard = ({ name, description }) => {
   const setTitleClick = () => {
     !isTitleClicked ? setIsTitleClicked(true) : setIsTitleClicked(false);
   };
-  const setDescriptionClick = () => {
-    !isDescriptionClicked
-      ? setIsDescriptionClicked(true)
-      : setIsDescriptionClicked(false);
-  };
+  // const setDescriptionClick = () => {
+  //   !isDescriptionClicked
+  //     ? setIsDescriptionClicked(true)
+  //     : setIsDescriptionClicked(false);
+  // };
 
   const handleClick = () => {
     setTitleClick();
-    setDescriptionClick();
+    // setDescriptionClick();
   };
 
   return (
-    <section>
-      <h3
-        className={isDescriptionClicked ? "titleHidden" : "listItemTitle"}
-        onClick={() => handleClick()}
+    <article className="description" onClick={() => handleClick()}>
+      <div className="listTitleAndArrow">
+        <h4 className="descriptionName">{name}</h4>
+        <i className="fa-solid fa-chevron-right fa-xs"></i>
+      </div>
+      <p
+        className={
+          !isTitleClicked ? "hiddenDescriptionText" : "descriptionText"
+        }
       >
-        {name}
-      </h3>
-      <article
-        className={!isTitleClicked ? "descriptionHidden" : "description"}
-        onClick={() => handleClick()}
-      >
-        <div className="listTitleAndArrow">
-          <h4 className="descriptionName">{name}</h4>
-          <i class="fa-solid fa-chevron-right fa-xs"></i>
-        </div>
-        <p>{description}</p>
-      </article>
-    </section>
+        {description}
+      </p>
+    </article>
   );
 };
 
