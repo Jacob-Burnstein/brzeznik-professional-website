@@ -8,7 +8,7 @@ const List = () => {
       description: "Here's how",
     },
     {
-      name: "Intellectual and Developmental Disabilities",
+      name: "Intellectual/Developmental Disabilities",
       description: "Here's how",
     },
     {
