@@ -177,10 +177,10 @@ body {
 .listTitleAndArrow {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   i {
     color: #7d6e83;
-    padding-left: 0.5em;
   }
 }
 
