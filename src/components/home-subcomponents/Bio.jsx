@@ -12,7 +12,7 @@ const Bio = () => {
         With extensive experience spanning hospitals, schools, and homes,
         Brianna has worked with a diverse clientele, including adults and
         children with Autism and other developmental disabilities, older adults
-        with Alzheimer’s and Dementia, individuals facing acute psychiatric
+        with Alzheimer's and Dementia, individuals facing acute psychiatric
         symptoms, and those navigating medical diagnoses or procedures. She also
         runs music therapy groups to support children dealing with challenges
         such as homelessness, parental incarceration, grief and bereavement, and
@@ -30,7 +30,7 @@ const Bio = () => {
         practicing psychotherapist at the Center for Therapy and Healing, a
         telehealth practice based in Boston, Massachusetts. There, she provides
         compassionate guidance to adolescents and adults, empowering them on
-        their journey towards enhanced well-being and personal growth.
+        their journey toward enhanced well-being and personal growth.
       </p>
     </section>
   );
