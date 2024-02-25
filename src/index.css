@@ -133,27 +133,22 @@ body {
   text-align: center;
   margin: 0;
 }
-.listSection .listItemTitle {
-  cursor: pointer;
-  padding-top: 1em;
-  color: #7d6e83;
-  text-align: center;
-}
 
 .description {
   border-radius: 5px;
   box-shadow: 0px 3px 8px lightgray;
   margin-top: 2em;
   margin-bottom: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   width: 25em;
   border: solid 1px;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
-.descriptionName {
-  color: #7d6e83;
+.unclickedDescription:hover {
+  background-color: #20b2aa;
 }
 
 .listTitleAndArrow {
@@ -165,8 +160,18 @@ body {
   color: #7d6e83;
 }
 
+.descriptionName {
+  color: #7d6e83;
+}
+
 .hiddenDescriptionText {
   display: none;
+}
+
+.descriptionText {
+  margin-top: 0;
+  line-height: 175%;
+  text-align: justify;
 }
 
 .titleHidden {

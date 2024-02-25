@@ -12,9 +12,14 @@ const ListCard = ({ name, description }) => {
   };
 
   return (
-    <article className="description" onClick={() => handleClick()}>
+    <article
+      className={
+        !isTitleClicked ? "description unclickedDescription" : "description"
+      }
+      onClick={() => handleClick()}
+    >
       <div className="listTitleAndArrow">
-        <h4 className="descriptionName">{name}</h4>
+        <h3 className={isTitleClicked && "descriptionName"}>{name}</h3>
         {!isTitleClicked ? (
           <i className="fa-solid fa-chevron-right fa-xs"></i>
         ) : (
