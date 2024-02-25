@@ -156,6 +156,15 @@ body {
   color: #7d6e83;
 }
 
+.listTitleAndArrow {
+  display: flex;
+  align-items: center;
+}
+.listTitleAndArrow i {
+  color: #7d6e83;
+  padding-left: 0.5em;
+}
+
 .descriptionHidden {
   display: none;
 }

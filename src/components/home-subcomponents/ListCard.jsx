@@ -30,7 +30,10 @@ const ListCard = ({ name, description }) => {
         className={!isTitleClicked ? "descriptionHidden" : "description"}
         onClick={() => handleClick()}
       >
-        <h4 className="descriptionName">{name}:</h4>
+        <div className="listTitleAndArrow">
+          <h4 className="descriptionName">{name}</h4>
+          <i class="fa-solid fa-chevron-right fa-xs"></i>
+        </div>
         <p>{description}</p>
       </article>
     </section>
