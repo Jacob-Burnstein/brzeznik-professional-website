@@ -4,9 +4,7 @@ html {
 
 body {
   margin: 0 auto;
-
-  background-color: #ffffff;
-
+  background-color: #f5f5f5;
   color: #333333;
 }
 
@@ -33,9 +31,10 @@ body {
 // TITLE
 .titleHeader {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   margin: 0 auto;
-  max-width: 1100px;
-  position: relative;
+  max-width: 80%;
   padding: 1em;
   margin-top: 3em;
 
@@ -50,9 +49,9 @@ body {
   .titleText {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    width: 300px;
     justify-content: space-between;
+    text-align: left;
+    width: 30%;
   }
 
   .nameHeading {
@@ -60,14 +59,8 @@ body {
   }
 
   img {
-    aspect-ratio: fixed;
-    width: 260px;
-  }
-
-  .header-images {
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
+    aspect-ratio: 4/3;
+    width: 470px;
   }
 }
 
@@ -78,25 +71,14 @@ body {
   font-size: large;
 }
 
-.square {
-  align-self: center;
-  opacity: 0.7;
-  aspect-ratio: 1/1;
-  width: 3em;
-  height: 3em;
-  margin-right: 1em;
-  background-color: #7d6e83;
-  z-index: -1;
-}
-
 .bio {
   z-index: 1;
   text-align: justify;
-  max-width: 1100px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 1em;
   line-height: 200%;
-  margin-bottom: 3em;
+  border-bottom: solid 1px;
 }
 
 // QUESTIONS
@@ -104,35 +86,30 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  background-color: #7d6e83;
-  margin: 0 auto;
   line-height: 200%;
-  padding-bottom: 2em;
-  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .question {
   text-align: center;
-  color: #ffffff;
-  // cursor: pointer;
   font-size: 2em;
-  margin: 0;
 }
 
 .answer {
-  text-align: center;
-  font-size: larger;
+  margin: 0 auto;
+  // font-size: larger;
   background-color: #ffffff;
   padding: 1em;
-  max-width: 1100px;
+  max-width: 80%;
   border: none;
-  border-radius: 5px;
+  // border-radius: 5px;
+  box-shadow: 0px 4px 8px lightgray;
+  text-align: justify;
+  margin-bottom: 1em;
 }
 
 .questionsAndServicesSection {
-  padding-top: 4em;
-  // background-color: #faf9f6;
+  padding-top: 2em;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -141,6 +118,7 @@ body {
 }
 
 .listSection {
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,35 +126,51 @@ body {
 
   h2 {
     text-align: center;
+    font-size: 2em;
+    width: 80%;
     margin: 0;
-  }
-
-  .listItemTitle {
-    cursor: pointer;
-    padding-top: 1em;
-    color: #7d6e83;
-    text-align: center;
   }
 }
 
 .description {
-  border-radius: 5px;
-  box-shadow: 0px 3px 8px lightgray;
+  // border-radius: 5px;
+  box-shadow: 0px 4px 8px lightgray;
   margin-top: 2em;
   margin-bottom: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 25em;
-  border: solid 1px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  width: 80%;
+
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.unclickedDescription:hover {
+  background-color: #20b2aa;
+}
+
+.listTitleAndArrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  i {
+    color: #7d6e83;
+  }
 }
 
 .descriptionName {
   color: #7d6e83;
 }
 
-.descriptionHidden {
+.hiddenDescriptionText {
   display: none;
+}
+
+.descriptionText {
+  margin-top: 0;
+  line-height: 175%;
+  text-align: justify;
 }
 
 .titleHidden {
@@ -236,7 +230,7 @@ body {
     flex-direction: column;
     background-color: #f5f5f5;
     // border: solid 1px;
-    border-radius: 5px;
+    // border-radius: 5px;
     box-shadow: 0px 3px 8px lightgray;
     padding: 1em;
 
@@ -247,7 +241,7 @@ body {
       padding-left: 7px;
       height: 2em;
       border: none;
-      border-radius: 5px;
+      // border-radius: 5px;
       width: 30em;
       box-shadow: 0px 3px 8px lightgray;
       // vertical-align: top;
@@ -260,7 +254,7 @@ body {
       padding-left: 7px;
       height: 2em;
       border: none;
-      border-radius: 5px;
+      // border-radius: 5px;
       width: 30em;
       box-shadow: 0px 3px 8px lightgray;
       font-family: inherit;
@@ -276,7 +270,7 @@ body {
       border: none;
       box-shadow: 0px 3px 8px darkgray;
       padding: 0.5em;
-      border-radius: 5px;
+      // border-radius: 5px;
       font-family: inherit;
     }
     button:hover {

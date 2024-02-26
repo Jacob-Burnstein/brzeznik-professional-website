@@ -1,11 +1,7 @@
 import React from "react";
-import placeholder from "../../images/placeholder.jpeg";
+import main from "../../images/main.jpeg";
 import jerbear from "../../images/jerbear.jpeg";
 import checklist from "../../images/checklist.jpeg";
-
-const image = placeholder;
-const jeremy = jerbear;
-const check = checklist;
 
 const Title = () => {
   return (
@@ -17,9 +13,7 @@ const Title = () => {
         <h3 className="nameHeading">Brianna Rzeznik, MA, MTBC</h3>
       </div>
       <div className="header-images">
-        <img src={image} alt="brianna in the closet" />
-        <img src={jeremy} alt="Jer-bear" />
-        <img src={check} alt="good times" />
+        <img src={main} alt="Brianna Rzeznik" />
       </div>
     </header>
   );
