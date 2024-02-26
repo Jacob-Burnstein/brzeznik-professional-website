@@ -27,9 +27,10 @@ body {
 
 .titleHeader {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 80%;
-  position: relative;
   padding: 1em;
   margin-top: 3em;
 }
@@ -43,21 +44,16 @@ body {
 .titleHeader .titleText {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: left;
   width: 30%;
-  justify-content: space-between;
 }
 .titleHeader .nameHeading {
   margin-bottom: 0;
 }
 .titleHeader img {
-  aspect-ratio: fixed;
-  width: 200px;
-}
-.titleHeader .header-images {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
+  aspect-ratio: 4/3;
+  width: 470px;
 }
 
 .intro {
@@ -129,7 +125,6 @@ body {
   padding-left: 1.5em;
   padding-right: 1.5em;
   width: 80%;
-  border: solid 1px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
