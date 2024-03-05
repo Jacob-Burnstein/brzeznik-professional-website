@@ -1,17 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 const QuestionsCard = ({ question, answer }) => {
-  const [isClicked, setClicked] = useState(true);
-
   return (
     <div>
-      <h2
-        className="question"
-        // onClick={() => (!isClicked ? setClicked(true) : setClicked(false))}
-      >
-        {question}
-      </h2>
-      <p className={!isClicked ? "hidden" : "answer"}>{answer}</p>
+      <h2 className="question">{question}</h2>
+      <p className="answer">{answer}</p>
     </div>
   );
 };
