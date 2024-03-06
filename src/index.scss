@@ -279,14 +279,13 @@ body {
 
 // Music
 .musicContent {
-  margin: 0 auto;
-  margin-top: 5em;
-  width: 80%;
-
-  // .img-text {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+  // width: 80vw;
+  margin-right: 10%;
+  margin-left: 10%;
 
   button {
     transition: all 0.3s ease;
@@ -295,6 +294,7 @@ body {
     border: none;
     box-shadow: 0px 3px 8px darkgray;
     padding: 0.5em;
+    margin: 1em;
     // border-radius: 5px;
     font-family: inherit;
   }
@@ -305,7 +305,14 @@ body {
   }
 
   img {
-    width: 300px;
+    width: 700px;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
     float: left;
+  }
+
+  p {
+    line-height: 175%;
+    margin: 0;
   }
 }
