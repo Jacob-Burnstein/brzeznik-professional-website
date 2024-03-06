@@ -14,6 +14,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 3em;
 }
 .navbar .navLinks {
   display: flex;
@@ -48,6 +49,7 @@ body {
 }
 
 .intro {
+  margin: 0;
   font-size: large;
 }
 
@@ -55,12 +57,12 @@ body {
   text-align: justify;
   max-width: 80%;
   margin: 0 auto;
-  padding: 1em;
   line-height: 175%;
 }
 .bio img {
   width: 350px;
   margin-right: 1em;
+  margin-top: 0.5em;
   float: left;
 }
 
