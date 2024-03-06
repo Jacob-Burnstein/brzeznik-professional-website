@@ -28,7 +28,7 @@ const ServicesOffered = () => {
 
   return (
     <>
-      <h2>Services Offered</h2>
+      <h2 className="servicesTitle">Services Offered</h2>
       <section className="servicesAndImgContainer">
         <div className="imgContainer">
           <img className="servicesImg" src={outside} />

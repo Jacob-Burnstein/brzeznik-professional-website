@@ -1,8 +1,9 @@
 import React from "react";
-
+import main from "../../images/main-portrait.jpeg";
 const Bio = () => {
   return (
     <section className="bio">
+      <img src={main} />
       <p className="intro">
         Brianna Rzeznik is a Masters-level music therapist, currently practicing
         in Austin, Texas.
