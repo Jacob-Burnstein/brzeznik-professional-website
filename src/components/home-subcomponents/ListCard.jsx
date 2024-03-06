@@ -20,11 +20,6 @@ const ListCard = ({ name, description }) => {
     >
       <div className="listTitleAndArrow">
         <h3 className={isTitleClicked ? "descriptionName" : ""}>{name}</h3>
-        {!isTitleClicked ? (
-          <i className="fa-solid fa-chevron-right fa-xs"></i>
-        ) : (
-          <i className="fa-solid fa-chevron-down fa-xs"></i>
-        )}
       </div>
       <p
         className={

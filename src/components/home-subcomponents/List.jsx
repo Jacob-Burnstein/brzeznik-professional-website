@@ -9,7 +9,7 @@ const List = () => {
         "Utilizing music therapy techniques, individuals with physical disabilities can benefit from improved gross and fine motor skills, enhanced coordination, increased grip strength, and better ability to cross the midline. By incorporating instrument play and movement to music, sessions can facilitate gait training and elevate overall physical capabilities. Moreover, integrating physical tasks and exercises with music transforms routine activities into enjoyable experiences, fostering engagement and motivation.",
     },
     {
-      name: "Intellectual/Developmental Disabilities",
+      name: "Intellectual & Developmental Disabilities",
       description:
         "Music therapy is a valuable tool for individuals with intellectual and developmental disabilities, offering opportunities for expressive language development, sustained attention, cognitive growth, and enhanced social engagement. The structured nature of musical activities aids in the memorization of task sequences, important rules, and acquisition of new skills. Within group settings, music provides a safe and structured platform for socialization, fostering meaningful connections and interactions among peers.",
     },
@@ -28,9 +28,11 @@ const List = () => {
   return (
     <div className="listSection">
       <h2>How can music therapy help with different challenges?</h2>
-      {namesAndDescriptions.map(({ name, description }, index) => (
-        <ListCard key={index} name={name} description={description} />
-      ))}
+      <section className="listCards">
+        {namesAndDescriptions.map(({ name, description }, index) => (
+          <ListCard key={index} name={name} description={description} />
+        ))}
+      </section>
     </div>
   );
 };

@@ -4,16 +4,19 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   color: #333333;
 }
 
 // NAVBAR
 
 .navbar {
-  background-color: #7d6e83;
+  background-color: #4f8295;
   color: #ffffff;
-  border-bottom: solid 1px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
   .navLinks {
     display: flex;
     justify-content: flex-end;
@@ -36,12 +39,12 @@ body {
   margin: 0 auto;
   max-width: 80%;
   padding: 1em;
-  margin-top: 3em;
+  margin-top: 4em;
+  // border: solid;
 
   .titleHeading {
     text-align: left;
     font-size: 3em;
-    height: 100%;
     margin: 0;
     display: flex;
   }
@@ -49,9 +52,11 @@ body {
   .titleText {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: left;
-    width: 30%;
+    // border: solid green;
+    justify-content: space-between;
+    max-width: 20%;
+    height: 395px;
   }
 
   .nameHeading {
@@ -59,8 +64,7 @@ body {
   }
 
   img {
-    aspect-ratio: 4/3;
-    width: 470px;
+    width: 600px;
   }
 }
 
@@ -78,33 +82,28 @@ body {
   margin: 0 auto;
   padding: 1em;
   line-height: 200%;
-  border-bottom: solid 1px;
 }
 
 // QUESTIONS
 .questionSection {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   line-height: 200%;
+  padding-top: 2em;
   padding-bottom: 1em;
 }
 
 .question {
-  text-align: center;
-  font-size: 2em;
+  padding-left: 10%;
 }
 
 .answer {
   margin: 0 auto;
-  // font-size: larger;
-  background-color: #ffffff;
-  padding: 1em;
   max-width: 80%;
   border: none;
-  // border-radius: 5px;
-  box-shadow: 0px 4px 8px lightgray;
   text-align: justify;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -118,18 +117,20 @@ body {
 }
 
 .listSection {
-  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 4em;
+  width: 80%;
 
   h2 {
-    text-align: center;
-    font-size: 2em;
-    width: 80%;
-    margin: 0;
+    margin: 0 auto;
   }
+}
+.listCards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .description {
@@ -139,28 +140,31 @@ body {
   margin-bottom: 2em;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  width: 80%;
-
+  width: 15em;
+  min-height: 8em;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
 .unclickedDescription:hover {
-  background-color: #20b2aa;
+  background-color: lightslategray;
+  border-radius: 5px;
+}
+
+.unclickedDescription {
+  padding-top: 2%;
+  padding-bottom: 1%;
 }
 
 .listTitleAndArrow {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  i {
-    color: #7d6e83;
-  }
+  justify-content: center;
+  text-align: center;
 }
 
 .descriptionName {
-  color: #7d6e83;
+  color: #4f8295;
 }
 
 .hiddenDescriptionText {
@@ -170,7 +174,6 @@ body {
 .descriptionText {
   margin-top: 0;
   line-height: 175%;
-  text-align: justify;
 }
 
 .titleHidden {
@@ -178,43 +181,35 @@ body {
 }
 
 // SERVICES
-.servicesList {
+.servicesAndImgContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100vw;
-  background-color: #f5f5f5;
-
-  h2 {
-    align-items: center;
-  }
-
-  ul {
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 5em;
+  width: 80%;
+  img {
+    aspect-ratio: 4/3;
+    width: 300px;
+    height: 400px;
     padding-top: 1em;
-    padding-bottom: 1em;
-    display: flex;
-    width: 80%;
-    justify-content: space-around;
   }
-
-  .serviceAndIcon {
+  .servicesList {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    list-style-type: none;
 
-    .service {
-      padding-top: 1em;
-      font-size: large;
-      color: #333333;
+    ul {
+      padding-bottom: 1em;
+      display: flex;
+      flex-direction: column;
     }
 
-    i {
-      color: #7d6e83;
+    .serviceAndDescription {
+      // border: solid;
+      padding-left: 1em;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5%;
+
+      h4 {
+        margin: 0;
+      }
     }
   }
 }

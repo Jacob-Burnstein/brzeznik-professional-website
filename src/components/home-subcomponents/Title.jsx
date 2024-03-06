@@ -1,7 +1,5 @@
 import React from "react";
 import main from "../../images/main.jpeg";
-import jerbear from "../../images/jerbear.jpeg";
-import checklist from "../../images/checklist.jpeg";
 
 const Title = () => {
   return (
