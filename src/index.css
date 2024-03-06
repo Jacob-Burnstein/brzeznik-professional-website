@@ -133,7 +133,7 @@ body {
 }
 
 .unclickedDescription:hover {
-  background-color: lightslategray;
+  background-color: #e2e6e9;
   border-radius: 5px;
 }
 
@@ -189,7 +189,8 @@ body {
   padding-left: 1em;
   display: flex;
   flex-direction: column;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
+  line-height: 175%;
 }
 .servicesAndImgContainer .servicesList .serviceAndDescription h4 {
   margin: 0;
