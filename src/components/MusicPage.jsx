@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import viola from "../images/viola.jpg";
 
 const MusicPage = () => {
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ const MusicPage = () => {
         session work, and music lessons.
       </p>
       <button onClick={() => navigate("/contact")}> Inquire Here</button>
+      <img src={viola} />
     </div>
   );
 };

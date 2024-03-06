@@ -265,5 +265,8 @@ body {
   background-color: #7e747e;
   color: #faf9f6;
 }
+.musicContent img {
+  width: 300px;
+}
 
 /*# sourceMappingURL=index.css.map */
