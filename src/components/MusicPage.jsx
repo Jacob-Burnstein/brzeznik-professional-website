@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const MusicPage = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="musicContent">
       <h1>Lessons & Performances</h1>
       <p>
         A classically trained violist with a passion for funky fiddling, Brianna
