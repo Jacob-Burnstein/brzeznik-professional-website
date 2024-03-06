@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import outside from "../../images/outside.jpeg";
+import child from "../../images/child.jpeg";
 
 const ServicesOffered = () => {
   const services = [
@@ -23,18 +25,33 @@ const ServicesOffered = () => {
         "I offer comprehensive music therapy in-services tailored to your organization's needs. Structured and informative sessions cover a variety of topics, including the benefits of music therapy, practical applications in different settings, and hands-on techniques for integrating music into your program. Whether you're a school, healthcare facility, or community organization, a music therapy in-service provides valuable insights and strategies to enhance the well-being of your clients or students through the power of music therapy.",
     },
   ];
+
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <>
-      <section className="servicesList">
-        <h2>Services Offered</h2>
-        <ul>
-          {services.map((service, index) => (
-            <div className="serviceAndDescription" key={index}>
-              <li className="service">{service.name}</li>
-              <p className="serviceDescription">{service.description}</p>
-            </div>
-          ))}
-        </ul>
+      <h2>Services Offered</h2>
+      <section className="servicesAndImgContainer">
+        <div className="imgContainer">
+          <img className="servicesImg" src={outside} />
+          <img className="servicesImg" src={child} />
+        </div>
+        <section className="servicesList">
+          <ul>
+            {services.map((service, index) => (
+              <div className="serviceAndDescription" key={index}>
+                <h4 onClick={() => handleClick()}>{service.name}</h4>
+                <p className={clicked ? "serviceDescription" : "serviceHidden"}>
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </ul>
+        </section>
       </section>
     </>
   );

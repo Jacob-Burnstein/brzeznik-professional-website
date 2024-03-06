@@ -116,10 +116,8 @@ body {
 }
 
 .listSection {
-  // background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
-  // align-items: center;
   padding-bottom: 4em;
   width: 80%;
 
@@ -130,8 +128,7 @@ body {
 .listCards {
   width: 100%;
   display: flex;
-  // border: solid;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -153,7 +150,7 @@ body {
 }
 
 .unclickedDescription {
-  padding-top: 3em;
+  padding-top: 1%;
 }
 
 .listTitleAndArrow {
@@ -177,7 +174,7 @@ body {
 .descriptionText {
   margin-top: 0;
   line-height: 175%;
-  text-align: justify;
+  // text-align: justify;
 }
 
 .titleHidden {
@@ -185,42 +182,33 @@ body {
 }
 
 // SERVICES
-.servicesList {
+.servicesAndImgContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100vw;
-
-  h2 {
-    align-items: center;
-  }
-
-  ul {
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 5em;
+  width: 80%;
+  img {
+    aspect-ratio: 4/3;
+    width: 300px;
+    height: 400px;
     padding-top: 1em;
-    padding-bottom: 1em;
-    display: flex;
-    width: 80%;
-    justify-content: space-around;
   }
-
-  .serviceAndIcon {
+  .servicesList {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    list-style-type: none;
 
-    .service {
-      padding-top: 1em;
-      font-size: large;
-      color: #333333;
+    ul {
+      padding-bottom: 1em;
+      display: flex;
+      flex-direction: column;
     }
 
-    i {
-      color: #7d6e83;
+    .serviceAndDescription {
+      padding-left: 1em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .serviceHidden {
+      display: none;
     }
   }
 }
