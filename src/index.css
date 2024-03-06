@@ -267,6 +267,7 @@ body {
 }
 .musicContent img {
   width: 300px;
+  float: left;
 }
 
 /*# sourceMappingURL=index.css.map */

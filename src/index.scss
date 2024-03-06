@@ -283,6 +283,11 @@ body {
   margin-top: 5em;
   width: 80%;
 
+  // .img-text {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
   button {
     transition: all 0.3s ease;
     background-color: #faf9f6;
@@ -301,5 +306,6 @@ body {
 
   img {
     width: 300px;
+    float: left;
   }
 }
