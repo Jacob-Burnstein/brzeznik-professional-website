@@ -186,6 +186,10 @@ body {
   padding-left: 1em;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5%;
+}
+.servicesAndImgContainer .servicesList .serviceAndDescription h4 {
+  margin: 0;
 }
 .servicesAndImgContainer .servicesList .serviceHidden {
   display: none;

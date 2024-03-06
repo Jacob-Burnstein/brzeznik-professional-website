@@ -174,7 +174,6 @@ body {
 .descriptionText {
   margin-top: 0;
   line-height: 175%;
-  // text-align: justify;
 }
 
 .titleHidden {
@@ -202,9 +201,15 @@ body {
     }
 
     .serviceAndDescription {
+      // border: solid;
       padding-left: 1em;
       display: flex;
       flex-direction: column;
+      padding-bottom: 5%;
+
+      h4 {
+        margin: 0;
+      }
     }
 
     .serviceHidden {

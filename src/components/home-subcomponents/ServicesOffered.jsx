@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import outside from "../../images/outside.jpeg";
 import child from "../../images/child.jpeg";
 
@@ -26,12 +26,6 @@ const ServicesOffered = () => {
     },
   ];
 
-  const [clicked, setClicked] = useState(false);
-
-  const handleClick = () => {
-    setClicked(!clicked);
-  };
-
   return (
     <>
       <h2>Services Offered</h2>
@@ -44,10 +38,8 @@ const ServicesOffered = () => {
           <ul>
             {services.map((service, index) => (
               <div className="serviceAndDescription" key={index}>
-                <h4 onClick={() => handleClick()}>{service.name}</h4>
-                <p className={clicked ? "serviceDescription" : "serviceHidden"}>
-                  {service.description}
-                </p>
+                <h4>{service.name}</h4>
+                <p className="serviceDescription">{service.description}</p>
               </div>
             ))}
           </ul>
