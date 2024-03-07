@@ -23,7 +23,16 @@ const Credentials = () => {
         "Wipe the spots up off the mirror. Don't leave my keys in the door. I never put wet towels on the floor anymore.",
     },
   ];
-  return <div></div>;
+  return (
+    <div>
+      {credentials.map((cred, index) => (
+        <article key={cred.index} className="credentialCard">
+          <h3>{cred.title}</h3>
+          <p>{cred.description}</p>
+        </article>
+      ))}
+    </div>
+  );
 };
 
 export default Credentials;
