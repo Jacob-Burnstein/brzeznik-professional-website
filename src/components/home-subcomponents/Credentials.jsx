@@ -24,7 +24,7 @@ const Credentials = () => {
     },
   ];
   return (
-    <div>
+    <div className="credentialsContainer">
       {credentials.map((cred, index) => (
         <article key={cred.index} className="credentialCard">
           <h3>{cred.title}</h3>

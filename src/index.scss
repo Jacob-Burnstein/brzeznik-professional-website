@@ -320,3 +320,28 @@ body {
     margin: 0;
   }
 }
+
+// Credentials
+.credentialsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 64em;
+  .credentialCard {
+    margin: 0.5em;
+    padding: 3em;
+    border: solid 1px lightgray;
+    // color: #4f8295;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    width: 20em;
+
+    p {
+      text-align: center;
+    }
+  }
+}
