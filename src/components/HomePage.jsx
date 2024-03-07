@@ -4,6 +4,7 @@ import Bio from "./home-subcomponents/Bio";
 import Questions from "./home-subcomponents/Questions";
 import List from "./home-subcomponents/List";
 import ServicesOffered from "./home-subcomponents/ServicesOffered";
+import Credentials from "./home-subcomponents/Credentials";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
           <List />
           <ServicesOffered />
         </section>
+        <Credentials />
       </main>
     </>
   );
