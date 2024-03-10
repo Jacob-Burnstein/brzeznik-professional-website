@@ -150,17 +150,14 @@ body {
   display: flex;
   justify-content: center;
   padding: 0;
-  max-height: 8em;
+  max-height: 10em;
+  min-height: 10em;
 }
 
 .unclickedDescription:hover {
-  // background-color: #e2e6e9;
+  width: 16em;
+  // height: 11em;
   border-radius: 5px;
-}
-
-.unclickedDescription {
-  padding-top: 2%;
-  padding-bottom: 1%;
 }
 
 .listTitleAndArrow {
@@ -336,11 +333,10 @@ body {
   flex-wrap: wrap;
   max-width: 64em;
   .credentialCard {
-    aspect-ratio: 1/1;
     margin: 0.5em;
     padding: 3em;
     border: solid 1px lightgray;
-    // color: #4f8295;
+    box-shadow: 0px 3px 8px lightgray;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
