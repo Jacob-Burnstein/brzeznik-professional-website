@@ -3,24 +3,26 @@ import React from "react";
 const Credentials = () => {
   const credentials = [
     {
-      title: "Undergrad",
-      description:
-        "I hear the clock, it's six AM, I feel so far from where I've been",
+      title: "University of Massachusetts Amherst",
+      description: "BS in Communication Disorders",
+      description2: "BMus In Music",
     },
     {
-      title: "The Masters",
-      description:
-        "I got my eggs, I got my pancakes too. I got my maple syrup, everything but you",
+      title: "Lesley University",
+      description: "MA in Clinical Mental Health Counseling: Music Therapy",
+      description2:
+        "Training in Lesley's graduate program prepares clinicians to address the emotional, cognitive, physical, and spiritual health of individuals using music as a lens for observation, research, and intervention.",
     },
     {
-      title: "MT-BC",
+      title: "Board-Certified Music Therapist (MT-BC)",
       description:
-        "I break the yolks and make a smiley face. I kinda like it in my brand new place",
+        "I am a board-certified music therapist. This certification is issued by the Certification Board for Music Therapists (CBMT), which grants this credential to individuals who meet the requirements developed for this profession. This certification is recognized both nationally and internationally, and allows me to administer music therapy treatment independently and ethically.",
     },
     {
-      title: "THISIS MY THESIS",
+      title: "Publication and Additional Specialties",
       description:
-        "Wipe the spots up off the mirror. Don't leave my keys in the door. I never put wet towels on the floor anymore.",
+        "Rzeznik, Brianna, 'The Use of Violin Family Instruments in Music Therapy with Individuals Experiencing Acute Psychiatric Presentations: A Literature Review' (2022). Expressive Therapies Capstone Theses. 556.",
+      description2: "https://digitalcommons.lesley.edu/expressive_theses/556",
     },
   ];
   return (
@@ -29,6 +31,7 @@ const Credentials = () => {
         <article key={cred.index} className="credentialCard">
           <h3>{cred.title}</h3>
           <p>{cred.description}</p>
+          {cred.description2 && <>{cred.description2}</>}
         </article>
       ))}
     </div>
