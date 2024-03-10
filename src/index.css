@@ -1,5 +1,5 @@
 html {
-  font-family: "Lora", serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
@@ -56,18 +56,21 @@ body {
 .bio {
   text-align: justify;
   max-width: 80%;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   line-height: 175%;
 }
 .bio img {
   width: 350px;
   margin-right: 1em;
-  margin-top: 0.5em;
   float: left;
 }
 
 .questionSection {
   max-width: 100%;
+  margin: 0 auto;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   line-height: 175%;
@@ -167,6 +170,7 @@ body {
 
 .servicesTitle {
   margin: 0;
+  margin-bottom: 1em;
 }
 
 .servicesAndImgContainer {
