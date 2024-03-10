@@ -22,7 +22,7 @@ const Credentials = () => {
       title: "Publication and Additional Specialties",
       description:
         "Rzeznik, Brianna, 'The Use of Violin Family Instruments in Music Therapy with Individuals Experiencing Acute Psychiatric Presentations: A Literature Review' (2022). Expressive Therapies Capstone Theses. 556.",
-      description2: "https://digitalcommons.lesley.edu/expressive_theses/556",
+      description2: "Read Here",
     },
   ];
   return (
@@ -31,7 +31,13 @@ const Credentials = () => {
         <article key={cred.index} className="credentialCard">
           <h3>{cred.title}</h3>
           <p>{cred.description}</p>
-          {cred.description2 && <>{cred.description2}</>}
+          {cred.description2 && cred.description2 === "Read Here" ? (
+            <a href="https://digitalcommons.lesley.edu/expressive_theses/556/">
+              <p>{cred.description2}</p>
+            </a>
+          ) : (
+            <p> {cred.description2}</p>
+          )}
         </article>
       ))}
     </div>

@@ -298,6 +298,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   aspect-ratio: 1/1;
   width: 20em;
 }
