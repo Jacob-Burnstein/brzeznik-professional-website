@@ -329,20 +329,25 @@ body {
   flex-wrap: wrap;
   max-width: 64em;
   .credentialCard {
+    aspect-ratio: 1/1;
     margin: 0.5em;
     padding: 3em;
     border: solid 1px lightgray;
     // color: #4f8295;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     aspect-ratio: 1/1;
-    width: 20em;
+    width: 22em;
+
+    h3 {
+      margin-bottom: 0;
+    }
 
     p {
       text-align: center;
+      margin: 0;
     }
   }
 }
