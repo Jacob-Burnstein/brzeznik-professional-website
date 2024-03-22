@@ -19,6 +19,7 @@ const MusicPage = () => {
           boundaries with her viola, infusing classical finesse with the raw
           energy of improvisation and alternative styles.
         </p>
+        <br />
         <p>
           Brianna also brings her expertise to the realm of teaching, offering
           tailored lessons on violin, viola, guitar, piano, and voice for
@@ -27,6 +28,7 @@ const MusicPage = () => {
           neurodivergent individuals and those with physical disabilities,
           fostering an inclusive and supportive learning environment.
         </p>
+        <br />
         <p>
           Brianna is available for hire for concerts, weddings, private events,
           session work, and music lessons.

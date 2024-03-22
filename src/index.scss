@@ -229,6 +229,7 @@ body {
     // border-radius: 5px;
     box-shadow: 0px 3px 8px lightgray;
     padding: 1em;
+    margin-bottom: 18%;
 
     input {
       font-family: inherit;
@@ -299,15 +300,15 @@ body {
   }
 
   button:hover {
-    background-color: #7e747e;
+    background-color: #432724;
     color: #faf9f6;
   }
 
   img {
     width: 700px;
-    margin-right: 1em;
+    margin-left: 1em;
     margin-top: 0.5em;
-    float: left;
+    float: right;
   }
 
   p {
@@ -349,12 +350,19 @@ body {
   }
 }
 
+.footer-container {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .footer {
   padding-top: 2em;
-  text-align: center;
   font-style: italic;
+}
 
-  a {
-    color: inherit;
-  }
+.footer a {
+  color: inherit;
 }
