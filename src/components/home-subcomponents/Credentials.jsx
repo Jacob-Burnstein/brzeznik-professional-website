@@ -3,9 +3,8 @@ import React from "react";
 const Credentials = () => {
   const credentials = [
     {
-      title: "UNIVERSITY OF MASSACHUSETTS",
-      description: "BS IN COMMUNICATION DISORDERS",
-      description2: "BMus IN MUSIC",
+      title:
+        "UNIVERSITY OF MASSACHUSETTS: BS IN COMMUNICATION DISORDERS | BMus IN MUSIC",
     },
     {
       title:
@@ -30,11 +29,14 @@ const Credentials = () => {
     <div className="credentialsContainer">
       {credentials.map((cred, index) => (
         <article key={cred.index} className="credentialCard">
-          <i class="fa-solid fa-toilet-paper fa-2x"></i>
+          <i class="fa-solid fa-graduation-cap fa-2x"></i>
           <h3>{cred.title}</h3>
           <p>{cred.description}</p>
           {cred.description2 === "Read Here" ? (
-            <a href="https://digitalcommons.lesley.edu/expressive_theses/556/">
+            <a
+              className="read-here"
+              href="https://digitalcommons.lesley.edu/expressive_theses/556/"
+            >
               <p>{cred.description2}</p>
             </a>
           ) : (

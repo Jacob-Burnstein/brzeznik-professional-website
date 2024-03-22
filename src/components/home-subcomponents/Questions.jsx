@@ -3,7 +3,7 @@ import React from "react";
 const Questions = () => {
   return (
     <div className="questionSection">
-      <h2 className="question ql">What Is Music Therapy?</h2>
+      <h2 className="question">What Is Music Therapy?</h2>
       <p className="answer">
         Music therapy is the evidence-based use of music activities to help
         individuals and groups build skills or achieve personal goals. Music

@@ -13,10 +13,8 @@ const HomePage = () => {
         <Title />
         <Bio />
         <Questions />
-        <section className="questionsAndServicesSection">
-          <List />
-          <ServicesOffered />
-        </section>
+        <List />
+        <ServicesOffered />
         <Credentials />
       </main>
     </>
