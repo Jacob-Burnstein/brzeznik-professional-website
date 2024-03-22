@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
 import MusicPage from "./components/MusicPage";
 import ContactPage from "./components/ContactPage";
+import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 
 export const App = () => {
@@ -14,6 +15,7 @@ export const App = () => {
         <Route path="/music" element={<MusicPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+      <Footer />
     </>
   );
 };
