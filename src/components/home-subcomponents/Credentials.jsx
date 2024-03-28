@@ -5,6 +5,8 @@ const Credentials = () => {
     {
       title:
         "UNIVERSITY OF MASSACHUSETTS: BS IN COMMUNICATION DISORDERS | BMus IN MUSIC",
+      description:
+        "Acquiring both a bachelor's degree in music and a bachelor's degree in communication disorders provides a unique blend of skills, including proficiency in music theory and proficiency on multiple instruments, alongside expertise in speech, language, and hearing disorders assessment and intervention.",
     },
     {
       title:
