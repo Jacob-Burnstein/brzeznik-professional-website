@@ -5,6 +5,7 @@ import Questions from "./home-subcomponents/Questions";
 import List from "./home-subcomponents/List";
 import ServicesOffered from "./home-subcomponents/ServicesOffered";
 import Credentials from "./home-subcomponents/Credentials";
+import Photos from "./home-subcomponents/Photos";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
         <List />
         <ServicesOffered />
         <Credentials />
+        <Photos />
       </main>
     </>
   );
