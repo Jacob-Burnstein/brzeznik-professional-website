@@ -211,7 +211,7 @@ body {
   padding-left: 7px;
   height: 2em;
   border: none;
-  width: 30em;
+  max-width: 30em;
   box-shadow: 0px 3px 8px lightgray;
 }
 .contactPage form textarea {
@@ -267,7 +267,7 @@ body {
   color: #faf9f6;
 }
 .musicContent img {
-  width: 700px;
+  max-width: 700px;
   margin-left: 1em;
   margin-top: 0.5em;
   float: right;
@@ -371,8 +371,8 @@ body {
   }
 }
 @media (max-width: 920px) {
-  .titleHeader {
-    padding: 0;
+  .navbar {
+    width: 100vw;
   }
   .bio {
     display: flex;
@@ -402,8 +402,23 @@ body {
   .home-photos img {
     padding: 1em;
   }
+  .musicContent {
+    margin-top: 3em;
+  }
   .musicContent img {
     float: none;
+    width: 20em;
+    margin-bottom: 1em;
+    margin-left: 0;
+  }
+  .musicContent h1 {
+    text-align: center;
+  }
+  .contactPage input {
+    width: 22em;
+  }
+  .contactPage textarea {
+    max-width: 22em;
   }
 }
 

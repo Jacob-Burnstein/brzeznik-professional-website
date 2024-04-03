@@ -219,8 +219,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f5f5f5;
-    // border: solid 1px;
-    // border-radius: 5px;
     box-shadow: 0px 3px 8px lightgray;
     padding: 1em;
     margin-bottom: 12em;
@@ -233,7 +231,7 @@ body {
       height: 2em;
       border: none;
       // border-radius: 5px;
-      width: 30em;
+      max-width: 30em;
       box-shadow: 0px 3px 8px lightgray;
       // vertical-align: top;
     }
@@ -300,7 +298,7 @@ body {
   }
 
   img {
-    width: 700px;
+    max-width: 700px;
     margin-left: 1em;
     margin-top: 0.5em;
     float: right;
@@ -418,8 +416,8 @@ body {
 }
 
 @media (max-width: 920px) {
-  .titleHeader {
-    padding: 0;
+  .navbar {
+    width: 100vw;
   }
 
   .bio {
@@ -459,8 +457,25 @@ body {
   }
 
   .musicContent {
+    margin-top: 3em;
     img {
       float: none;
+      width: 20em;
+      margin-bottom: 1em;
+      margin-left: 0;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .contactPage {
+    input {
+      width: 22em;
+    }
+
+    textarea {
+      max-width: 22em;
     }
   }
 }
