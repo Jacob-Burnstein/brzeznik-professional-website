@@ -196,7 +196,6 @@ body {
     flex-direction: column;
 
     .serviceAndDescription {
-      padding-left: 1em;
       display: flex;
       flex-direction: column;
       text-align: justify;
@@ -277,6 +276,7 @@ body {
   max-width: 1100px;
   display: flex;
   font-size: large;
+  text-align: justify;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
@@ -414,5 +414,53 @@ body {
   .musicContent {
     margin-right: 3em;
     margin-left: 3em;
+  }
+}
+
+@media (max-width: 920px) {
+  .titleHeader {
+    padding: 0;
+  }
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .listCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicesAndImgContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    img {
+      margin-bottom: 1em;
+    }
+  }
+
+  .servicesList {
+    ul {
+      margin-top: 0;
+      padding-left: 0;
+      list-style-type: none;
+    }
+  }
+
+  .home-photos {
+    flex-direction: column;
+    align-items: center;
+    img {
+      padding: 1em;
+    }
+  }
+
+  .musicContent {
+    img {
+      float: none;
+    }
   }
 }
