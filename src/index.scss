@@ -39,8 +39,7 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1100px;
-  padding: 1em;
-  margin-top: 4em;
+  margin-top: 5em;
   // border: solid;
 
   .titleHeading {
@@ -51,8 +50,6 @@ body {
   }
 
   .titleText {
-    // display: flex;
-    // flex-direction: column;
     text-align: left;
     justify-content: space-between;
   }
@@ -60,7 +57,6 @@ body {
 
 // BIO
 .intro {
-  // font-style: italic;
   margin: 0;
   font-size: larger;
 }
@@ -78,8 +74,6 @@ body {
     width: 450px;
     height: 600px;
     margin-right: 1em;
-    // margin-top: 0.5em;
-    // float: left;
   }
 }
 
@@ -88,7 +82,7 @@ body {
   max-width: 1100px;
   font-size: large;
   margin: 0 auto;
-  margin-top: 1em;
+  // margin-top: 1em;
   display: flex;
   flex-direction: column;
   line-height: 180%;
@@ -100,16 +94,15 @@ body {
   max-width: 1100px;
   border: none;
   text-align: justify;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 .listSection {
   margin: 0 auto;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
-  padding-bottom: 4em;
-  width: 1100px;
+  padding-bottom: 2em;
+  max-width: 1100px;
 
   h2 {
     margin: 0 auto;
@@ -119,7 +112,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
 .description {
@@ -183,29 +176,29 @@ body {
   margin: 0 auto;
   display: flex;
   max-width: 1100px;
+  margin-bottom: 1em;
+
   img {
     aspect-ratio: 4/3;
     width: 300px;
     height: 400px;
-    padding-top: 1em;
-    padding-bottom: 5em;
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25em;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
   }
   .servicesList {
     display: flex;
     flex-direction: column;
 
-    ul {
-      padding-bottom: 1em;
-      display: flex;
-      flex-direction: column;
-    }
-
     .serviceAndDescription {
-      // border: solid;
-      padding-left: 1em;
       display: flex;
       flex-direction: column;
-      padding-bottom: 2%;
+      text-align: justify;
       line-height: 180%;
 
       h4 {
@@ -226,11 +219,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f5f5f5;
-    // border: solid 1px;
-    // border-radius: 5px;
     box-shadow: 0px 3px 8px lightgray;
     padding: 1em;
-    margin-bottom: 18%;
+    margin-bottom: 12em;
 
     input {
       font-family: inherit;
@@ -240,7 +231,7 @@ body {
       height: 2em;
       border: none;
       // border-radius: 5px;
-      width: 30em;
+      max-width: 30em;
       box-shadow: 0px 3px 8px lightgray;
       // vertical-align: top;
     }
@@ -283,6 +274,7 @@ body {
   max-width: 1100px;
   display: flex;
   font-size: large;
+  text-align: justify;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
@@ -306,7 +298,7 @@ body {
   }
 
   img {
-    width: 700px;
+    max-width: 700px;
     margin-left: 1em;
     margin-top: 0.5em;
     float: right;
@@ -384,4 +376,110 @@ body {
 
 .footer a {
   color: inherit;
+}
+
+@media (max-width: 1230px) {
+  .titleHeader {
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+
+  .bio {
+    margin-right: 3em;
+    margin-left: 3em;
+    display: block;
+
+    img {
+      float: left;
+    }
+  }
+
+  .questionSection {
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+
+  .listSection {
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+
+  .servicesAndImgContainer {
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+
+  .musicContent {
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+}
+
+@media (max-width: 920px) {
+  .navbar {
+    width: 100vw;
+  }
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro {
+    margin-top: 1em;
+  }
+
+  .listCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicesAndImgContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    img {
+      margin-bottom: 1em;
+    }
+  }
+
+  .servicesList {
+    ul {
+      margin-top: 0;
+      padding-left: 0;
+      list-style-type: none;
+    }
+  }
+
+  .home-photos {
+    flex-direction: column;
+    align-items: center;
+    img {
+      padding: 1em;
+    }
+  }
+
+  .musicContent {
+    margin-top: 3em;
+    img {
+      float: none;
+      width: 20em;
+      margin-bottom: 1em;
+      margin-left: 0;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .contactPage {
+    input {
+      width: 22em;
+    }
+
+    textarea {
+      max-width: 22em;
+    }
+  }
 }
