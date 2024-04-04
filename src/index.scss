@@ -416,18 +416,19 @@ body {
 }
 
 @media (max-width: 920px) {
-  .navbar {
-    width: 100vw;
-  }
-
   .bio {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: left;
   }
 
   .intro {
     margin-top: 1em;
+  }
+
+  .answer {
+    text-align: left;
   }
 
   .listCards {
@@ -452,6 +453,10 @@ body {
     }
   }
 
+  .serviceDescription {
+    text-align: left;
+  }
+
   .home-photos {
     flex-direction: column;
     align-items: center;
@@ -462,6 +467,7 @@ body {
 
   .musicContent {
     margin-top: 3em;
+    text-align: left;
     img {
       float: none;
       width: 20em;
