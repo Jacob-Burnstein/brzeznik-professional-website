@@ -485,6 +485,9 @@ body {
   .musicContent h1 {
     text-align: center;
   }
+  .musicContent button {
+    color: #333333;
+  }
   .contactPage input {
     width: 22em;
   }
