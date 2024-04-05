@@ -278,7 +278,12 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  justify-content: center;
   margin-top: 4em;
+
+  h1 {
+    text-align: center;
+  }
 
   button {
     transition: all 0.3s ease;
@@ -290,6 +295,7 @@ body {
     margin: 1em;
     // border-radius: 5px;
     font-family: inherit;
+    max-width: fit-content;
   }
 
   button:hover {
@@ -495,11 +501,13 @@ body {
   .musicContent {
     margin-top: 3em;
     text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
+
     img {
-      float: none;
-      width: 20em;
+      width: 95vw;
       margin-bottom: 1em;
-      margin-left: 0;
+      margin: 0 auto;
     }
     h1 {
       text-align: center;

@@ -250,7 +250,11 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  justify-content: center;
   margin-top: 4em;
+}
+.musicContent h1 {
+  text-align: center;
 }
 .musicContent button {
   transition: all 0.3s ease;
@@ -261,6 +265,7 @@ body {
   padding: 0.5em;
   margin: 1em;
   font-family: inherit;
+  max-width: fit-content;
 }
 .musicContent button:hover {
   background-color: #432724;
@@ -436,12 +441,13 @@ body {
   .musicContent {
     margin-top: 3em;
     text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .musicContent img {
-    float: none;
-    width: 20em;
+    width: 95vw;
     margin-bottom: 1em;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .musicContent h1 {
     text-align: center;
