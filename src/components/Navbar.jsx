@@ -20,7 +20,7 @@ const Navbar = () => {
           <p>|</p>
           <li onClick={() => navigate("/contact")}>Contact</li>
         </ul>
-        <i class="fa-solid fa-bars fa-2x" onClick={() => handleClick()}></i>
+        <i className="fa-solid fa-bars fa-2x" onClick={() => handleClick()}></i>
         <ul className={clicked ? "mobileNavLinks" : "hideMobileNavLinks"}>
           <li
             onClick={() => {
