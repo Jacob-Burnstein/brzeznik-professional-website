@@ -376,12 +376,32 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .titleHeader {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .questionSection {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .question {
+    text-align: center;
   }
   .intro {
     margin-top: 1em;
   }
   .answer {
     text-align: left;
+  }
+  .listSection {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .listSection h2 {
+    text-align: center;
   }
   .listCards {
     flex-direction: column;
@@ -401,6 +421,10 @@ body {
   }
   .serviceDescription {
     text-align: left;
+  }
+  .servicesAndImgContainer {
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .home-photos {
     flex-direction: column;
