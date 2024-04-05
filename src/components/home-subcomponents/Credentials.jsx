@@ -30,8 +30,8 @@ const Credentials = () => {
   return (
     <div className="credentialsContainer">
       {credentials.map((cred, index) => (
-        <article key={cred.index} className="credentialCard">
-          <i class="fa-solid fa-graduation-cap fa-2x"></i>
+        <article key={index} className="credentialCard">
+          <i className="fa-solid fa-graduation-cap fa-2x"></i>
           <h3>{cred.title}</h3>
           <p>{cred.description}</p>
           {cred.description2 === "Read Here" ? (
