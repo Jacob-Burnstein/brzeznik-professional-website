@@ -29,15 +29,19 @@ const Photos = () => {
 
   return (
     <div className="home-photos">
-      <div>
-        <button onClick={goBack}>&lt;</button>
-        <img
-          src={photos[selectedImage].name}
-          className={photos[selectedImage].className}
-          alt={photos[selectedImage].alt}
-        />
-        <button onClick={goNext}>&gt;</button>
-      </div>
+      <i
+        className="fa-solid fa-arrow-left arrow back-arrow"
+        onClick={goBack}
+      ></i>
+      <img
+        src={photos[selectedImage].name}
+        className={photos[selectedImage].className}
+        alt={photos[selectedImage].alt}
+      />
+      <i
+        className="fa-solid fa-arrow-right arrow next-arrow"
+        onClick={goNext}
+      ></i>
     </div>
   );
 };
