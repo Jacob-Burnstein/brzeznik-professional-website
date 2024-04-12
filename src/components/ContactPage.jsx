@@ -7,7 +7,7 @@ const ContactPage = () => {
   const [message, setMessage] = useState("");
   const [userMessage, setUserMessage] = useState("");
 
-  const serviceId = "service_fgob5cf";
+  const serviceId = "service_i779wqo";
   const templateId = "template_s8bncad";
   const publicKey = "8PMKhMX1-PNCW9h4V";
 
