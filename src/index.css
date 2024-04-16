@@ -323,15 +323,39 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 2em;
+  position: relative;
 }
 .home-photos .landscape {
+  transition: all 0.3s ease;
   aspect-ratio: fixed;
-  width: 450px;
+  height: 300px;
 }
 .home-photos .portrait {
+  transition: all 0.3s ease;
   aspect-ratio: fixed;
-  width: 300px;
+  height: 300px;
+}
+.home-photos .arrow {
+  transition: all 0.3s ease;
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  color: #ffffff;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.1);
+}
+.home-photos .arrow:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.home-photos .back-arrow {
+  left: 2px;
+}
+.home-photos .next-arrow {
+  right: 2px;
 }
 
 .footer-container {
@@ -462,14 +486,24 @@ body {
     margin-right: 1em;
   }
   .home-photos {
-    flex-direction: column;
-    align-items: center;
-  }
-  .home-photos img {
-    padding: 1em;
+    justify-content: space-around;
   }
   .home-photos .landscape {
-    width: 90vw;
+    aspect-ratio: fixed;
+    height: 300px;
+  }
+  .home-photos .portrait {
+    aspect-ratio: fixed;
+    height: 300px;
+  }
+  .home-photos .invisible-photos {
+    display: none;
+  }
+  .home-photos .back-arrow {
+    margin-left: 1em;
+  }
+  .home-photos .next-arrow {
+    margin-right: 1em;
   }
   .musicContent {
     margin-top: 3em;

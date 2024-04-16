@@ -1,14 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import laughs from "../../images/laughs.jpeg";
 import medical from "../../images/medical.jpeg";
 import dog from "../../images/dog.jpg";
+import violaSession from "../../images/viola-session.jpg";
 
 const Photos = () => {
+  const [selectedIndeces, setSelectedIndeces] = useState([0, 1, 2]);
+
+  const photos = [
+    {
+      name: violaSession,
+      className: "landscape",
+      alt: "Music therapy session",
+    },
+    { name: medical, className: "portrait", alt: "Brianna in PPE" },
+    { name: laughs, className: "landscape", alt: "Music therapy session" },
+    { name: dog, className: "portrait", alt: "Brianna and dog" },
+  ];
+
+  const goBack = () => {
+    setSelectedIndeces((prevIndeces) =>
+      prevIndeces.map((index) => {
+        if (index - 1 < 0) return photos.length - 1;
+        else return index - 1;
+      })
+    );
+  };
+
+  const goNext = () => {
+    setSelectedIndeces((prevIndeces) =>
+      prevIndeces.map((index) => {
+        if (index + 1 === photos.length) return 0;
+        else return index + 1;
+      })
+    );
+  };
+
   return (
     <div className="home-photos">
-      <img className="portrait" src={medical} alt="Brianna in PPE" />
-      <img className="landscape" src={laughs} alt="Music therapy session" />
-      <img className="portrait" src={dog} alt="Brianna and dog" />
+      <i
+        className="fa-solid fa-arrow-left arrow back-arrow"
+        onClick={goBack}
+      ></i>
+      {selectedIndeces.map((index) => (
+        <img
+          key={photos[index].name}
+          src={photos[index].name}
+          className={
+            selectedIndeces.indexOf(index) > 0
+              ? `${photos[index].className} invisible-photos`
+              : photos[index].className
+          }
+          alt={photos[index].alt}
+        />
+      ))}
+      <i
+        className="fa-solid fa-arrow-right arrow next-arrow"
+        onClick={goNext}
+      ></i>
     </div>
   );
 };
