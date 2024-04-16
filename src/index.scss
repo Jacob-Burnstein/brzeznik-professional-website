@@ -387,19 +387,20 @@ body {
   // }
 
   .arrow {
+    transition: all 0.3s ease;
     display: flex;
     // justify-content: space-around;
     cursor: pointer;
     position: absolute;
     z-index: 2;
-    border-radius: 5px;
+    border-radius: 50%;
     color: #ffffff;
-    padding: 0 0.5em;
+    padding: 1em;
     background: rgba(0, 0, 0, 0.1);
   }
 
   .arrow:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
   }
 
   .back-arrow {
