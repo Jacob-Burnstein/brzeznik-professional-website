@@ -5,7 +5,8 @@ import dog from "../../images/dog.jpg";
 import violaSession from "../../images/viola-session.jpg";
 
 const Photos = () => {
-  const [selectedImage, setSelectedImage] = useState(0);
+  let selectedIndeces = [0, 1, 2];
+
   const photos = [
     {
       name: violaSession,
@@ -18,13 +19,19 @@ const Photos = () => {
   ];
 
   const goBack = () => {
-    setSelectedImage(selectedImage > 0 ? selectedImage - 1 : photos.length - 1);
+    selectedIndeces = selectedIndeces.map((index) => {
+      if (index - 1 < 0) return photos.length - 1;
+      else return index - 1;
+    });
+    console.log("back: ", selectedIndeces);
   };
 
   const goNext = () => {
-    setSelectedImage(
-      selectedImage === photos.length - 1 ? 0 : selectedImage + 1
-    );
+    selectedIndeces = selectedIndeces.map((index) => {
+      if (index + 1 === photos.length) return 0;
+      else return index + 1;
+    });
+    console.log("next: ", selectedIndeces);
   };
 
   return (
@@ -33,11 +40,13 @@ const Photos = () => {
         className="fa-solid fa-arrow-left arrow back-arrow"
         onClick={goBack}
       ></i>
-      <img
-        src={photos[selectedImage].name}
-        className={photos[selectedImage].className}
-        alt={photos[selectedImage].alt}
-      />
+      {selectedIndeces.map((index) => (
+        <img
+          src={photos[index].name}
+          className={photos[index].className}
+          alt={photos[index].alt}
+        />
+      ))}
       <i
         className="fa-solid fa-arrow-right arrow next-arrow"
         onClick={goNext}
