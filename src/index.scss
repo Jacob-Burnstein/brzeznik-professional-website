@@ -358,23 +358,33 @@ body {
 }
 
 .home-photos {
-  max-width: fit-content;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 2em;
   position: relative;
 
   .landscape {
+    transition: all 0.3s ease;
     aspect-ratio: fixed;
-    width: 450px;
+    height: 300px;
   }
 
+  // .landscape:hover {
+  //   height: 325px;
+  // }
+
   .portrait {
+    transition: all 0.3s ease;
     aspect-ratio: fixed;
-    width: 300px;
+    height: 300px;
   }
+
+  // .portrait:hover {
+  //   height: 325px;
+  // }
 
   .arrow {
     display: flex;
