@@ -19,7 +19,7 @@ const Photos = () => {
   ];
 
   const goBack = () => {
-    selectedIndeces((prevIndeces) =>
+    setSelectedIndeces((prevIndeces) =>
       prevIndeces.map((index) => {
         if (index - 1 < 0) return photos.length - 1;
         else return index - 1;
@@ -44,8 +44,13 @@ const Photos = () => {
       ></i>
       {selectedIndeces.map((index) => (
         <img
+          key={photos[index].name}
           src={photos[index].name}
-          className={photos[index].className}
+          className={
+            selectedIndeces.indexOf(index) > 0
+              ? `${photos[index].className} invisible-photos`
+              : photos[index].className
+          }
           alt={photos[index].alt}
         />
       ))}

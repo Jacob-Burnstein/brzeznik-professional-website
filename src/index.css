@@ -485,14 +485,24 @@ body {
     margin-right: 1em;
   }
   .home-photos {
-    flex-direction: column;
-    align-items: center;
-  }
-  .home-photos img {
-    padding: 1em;
+    justify-content: space-around;
   }
   .home-photos .landscape {
-    width: 90vw;
+    aspect-ratio: fixed;
+    height: 300px;
+  }
+  .home-photos .portrait {
+    aspect-ratio: fixed;
+    height: 300px;
+  }
+  .home-photos .invisible-photos {
+    display: none;
+  }
+  .home-photos .back-arrow {
+    margin-left: 1em;
+  }
+  .home-photos .next-arrow {
+    margin-right: 1em;
   }
   .musicContent {
     margin-top: 3em;
