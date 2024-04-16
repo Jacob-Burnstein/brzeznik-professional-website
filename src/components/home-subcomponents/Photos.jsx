@@ -5,7 +5,7 @@ import dog from "../../images/dog.jpg";
 import violaSession from "../../images/viola-session.jpg";
 
 const Photos = () => {
-  let selectedIndeces = [0, 1, 2];
+  const [selectedIndeces, setSelectedIndeces] = useState([0, 1, 2]);
 
   const photos = [
     {
@@ -19,19 +19,21 @@ const Photos = () => {
   ];
 
   const goBack = () => {
-    selectedIndeces = selectedIndeces.map((index) => {
-      if (index - 1 < 0) return photos.length - 1;
-      else return index - 1;
-    });
-    console.log("back: ", selectedIndeces);
+    selectedIndeces((prevIndeces) =>
+      prevIndeces.map((index) => {
+        if (index - 1 < 0) return photos.length - 1;
+        else return index - 1;
+      })
+    );
   };
 
   const goNext = () => {
-    selectedIndeces = selectedIndeces.map((index) => {
-      if (index + 1 === photos.length) return 0;
-      else return index + 1;
-    });
-    console.log("next: ", selectedIndeces);
+    setSelectedIndeces((prevIndeces) =>
+      prevIndeces.map((index) => {
+        if (index + 1 === photos.length) return 0;
+        else return index + 1;
+      })
+    );
   };
 
   return (
