@@ -362,16 +362,52 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 2em;
+  position: relative;
 
   .landscape {
+    transition: all 0.3s ease;
     aspect-ratio: fixed;
-    width: 450px;
+    height: 300px;
   }
 
+  // .landscape:hover {
+  //   height: 325px;
+  // }
+
   .portrait {
+    transition: all 0.3s ease;
     aspect-ratio: fixed;
-    width: 300px;
+    height: 300px;
+  }
+
+  // .portrait:hover {
+  //   height: 325px;
+  // }
+
+  .arrow {
+    transition: all 0.3s ease;
+    display: flex;
+    // justify-content: space-around;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    color: #ffffff;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .arrow:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .back-arrow {
+    left: 2px;
+  }
+  .next-arrow {
+    right: 2px;
   }
 }
 
@@ -530,14 +566,28 @@ body {
   }
 
   .home-photos {
-    flex-direction: column;
-    align-items: center;
-    img {
-      padding: 1em;
-    }
+    justify-content: space-around;
 
     .landscape {
-      width: 90vw;
+      aspect-ratio: fixed;
+      height: 300px;
+    }
+
+    .portrait {
+      aspect-ratio: fixed;
+      height: 300px;
+    }
+
+    .invisible-photos {
+      display: none;
+    }
+
+    .back-arrow {
+      margin-left: 1em;
+    }
+
+    .next-arrow {
+      margin-right: 1em;
     }
   }
 
