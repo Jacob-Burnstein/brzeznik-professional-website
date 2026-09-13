@@ -16,8 +16,8 @@ const Navbar = () => {
         <ul className="navLinks">
           <li onClick={() => navigate("/home")}>Home</li>
           <p>|</p>
-          <li onClick={() => navigate("/music")}>Lessons & Performance</li>
-          <p>|</p>
+          {/* <li onClick={() => navigate("/music")}>Music Performance</li>
+          <p>|</p> */}
           <li onClick={() => navigate("/contact")}>Contact</li>
         </ul>
         <i className="fa-solid fa-bars fa-2x" onClick={() => handleClick()}></i>
@@ -36,7 +36,7 @@ const Navbar = () => {
               handleClick();
             }}
           >
-            Lessons & Performance
+            Music Performance
           </li>
           <li
             onClick={() => {
