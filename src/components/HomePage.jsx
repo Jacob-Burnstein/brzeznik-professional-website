@@ -17,6 +17,11 @@ const HomePage = () => {
         <List />
         <ServicesOffered />
         <Credentials />
+        <div className="contactBtnContainer">
+          <button className="contactBtn" onClick={() => navigate("/contact")}>
+            Contact Me
+          </button>
+        </div>
         <Photos />
       </main>
     </>

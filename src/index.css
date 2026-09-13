@@ -240,19 +240,32 @@ body {
   height: 10em;
   resize: vertical;
 }
-.contactPage form button {
+/* Shared button styles for Contact Form and Home/Photo Contact Button */
+.contactPage form button,
+.contactBtn {
   transition: all 0.3s ease;
-  width: 5em;
+  min-width: 7em; /* Slight increase so 'Contact Me' fits on one line */
   background-color: #faf9f6;
   font-size: larger;
   border: none;
   box-shadow: 0px 3px 8px darkgray;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   font-family: inherit;
+  cursor: pointer;
 }
-.contactPage form button:hover {
+
+.contactPage form button:hover,
+.contactBtn:hover {
   background-color: #7e747e;
   color: #faf9f6;
+}
+
+/* Wrapper to center the button above <Photos /> */
+.contactBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 1em 0;
+  width: 100%;
 }
 
 .musicContent {
