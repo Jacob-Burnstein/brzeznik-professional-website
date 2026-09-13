@@ -30,14 +30,14 @@ const Navbar = () => {
           >
             Home
           </li>
-          <li
+          {/* <li
             onClick={() => {
               navigate("/music");
               handleClick();
             }}
           >
             Music Performance
-          </li>
+          </li> */}
           <li
             onClick={() => {
               navigate("/contact");
