@@ -6,8 +6,10 @@ import List from "./home-subcomponents/List";
 import ServicesOffered from "./home-subcomponents/ServicesOffered";
 import Credentials from "./home-subcomponents/Credentials";
 import Photos from "./home-subcomponents/Photos";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <main>
