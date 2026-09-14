@@ -20,7 +20,10 @@ const HomePage = () => {
         <ServicesOffered />
         <Credentials />
         <div className="contactBtnContainer">
-          <button className="contactBtn" onClick={() => navigate("/contact")}>
+          <button
+            className="contactBtn homeContactBtn"
+            onClick={() => navigate("/contact")}
+          >
             Contact Me
           </button>
         </div>
