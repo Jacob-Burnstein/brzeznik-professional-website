@@ -4,7 +4,7 @@ import ListCard from "./ListCard";
 const List = () => {
   const namesAndDescriptions = [
     {
-      name: "Physical Disabilites",
+      name: "Physical Disabilities",
       description:
         "Utilizing music therapy techniques, individuals with physical disabilities can benefit from improved gross and fine motor skills, enhanced coordination, increased grip strength, and better ability to cross the midline. By incorporating instrument play and movement to music, sessions can facilitate gait training and elevate overall physical capabilities. Moreover, integrating physical tasks and exercises with music transforms routine activities into enjoyable experiences, fostering engagement and motivation.",
     },

@@ -19,7 +19,7 @@ const Questions = () => {
         target a client's unique goals. To be a music therapist, one must hold a
         Bachelor's degree or higher from a college or university program that's
         been approved by the American Music Therapy Association. In addition to
-        educational coursework, they must compete at least 1200 supervised hours
+        educational coursework, they must complete at least 1200 supervised hours
         of clinical training, including a supervised internship. Lastly, they
         must pass the national board certification exam to obtain the credential
         MT-BC (Music Therapist-Board Certified), which is necessary for
